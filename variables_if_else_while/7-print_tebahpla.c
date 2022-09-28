@@ -8,7 +8,7 @@ int main(void)
 {
 	char rev;
 
-	for (rev = 90; rev >= 65; rev--)
+	for (rev = 122; rev >= 90; rev--)
 		putchar(rev);
 	putchar('\n');
 	return (0);
