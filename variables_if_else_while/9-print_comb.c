@@ -7,7 +7,6 @@
 int main(void)
 {
 	int num = 0;
-	char *sep = ", ";
 
 	for (; num <= 9; num++)
 	{
