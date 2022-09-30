@@ -5,7 +5,13 @@
  */
 int main(void)
 {
-	write(0, "_putchar", 8);
+	char *str = "_putchar";
+
+	while (*str)
+	{
+		_putchar(*str);
+		str++;
+	}
 	_putchar('\n');
 	return (0);
 }
