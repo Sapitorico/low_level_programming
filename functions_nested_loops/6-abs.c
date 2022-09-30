@@ -2,7 +2,7 @@
 /**
  * _abs - computes the absolute value of an integer
  * @i: is a integer number resived
- * Return: 0
+ * Return: less than 0 absolute value,greater than 0 the number, otherwise 0
  */
 int _abs(int i)
 {
@@ -14,5 +14,4 @@ int _abs(int i)
 	else if (i > 0)
 		return (i);
 	return (0);
-
 }
