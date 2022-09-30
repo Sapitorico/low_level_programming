@@ -26,3 +26,6 @@ int main(void)
 	return (0);
 }
 ```
+* The modulo **%** operator is a binary operator and only makes sense for integer numbers, if we perform the operation i % n the range of the result will be the remainder of the division between i and n a number between i and n -1. 
+* ASCII is the standard encoding for the exchange of information, encoded in octal decimal and hexadecimal.
+* ! Negate — used to negate or reverse a test or exit status
