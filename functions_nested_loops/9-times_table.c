@@ -23,7 +23,7 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(resultado + '0');
 			}
-			else 
+			else
 				_putchar(resultado + '0');
 			if (divisor != 9)
 			{
