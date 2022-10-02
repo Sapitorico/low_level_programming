@@ -9,7 +9,7 @@ int main(void)
 	int num = 0;
 
 	for (; num < 10; num++)
-		putchar((num % 10) + '0');	/*base 10 numbers from 0 to 9,  0 is not a decimal number*/
+		putchar((num % 10) + '0');	/*rest of the number from 0 to 9,'0'converts the result to its ASCII */
 	putchar('\n');
 	return (0);
 }

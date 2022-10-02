@@ -1,4 +1,46 @@
 # C - Variables, if, else, while
+### Variables
+**Data types | Integer types (on most 64bits computers)**
+| Type  | Storage size  | Value range  |
+| ------------ | ------------ | ------------ |
+| char  | 1 byte  |  -128 to 127 |
+| unsigned char  | 1 byte  | 0 to 255  |
+| short  | 2 bytes  | -32,768 to 32,767  |
+| unsigned short  | 2 bytes  | 0 to 65,535  |
+| int  | 4 bytes  | -2,147,483,648 to 2,147,483,647  |
+| unsigned int   |  4 bytes | 0 to 4,294,967,295  |
+| long  | 8 bytes  | −9,223,372,036,854,775,808 to 9,223,372,036,854,775,807  |
+|  unsigned long | 8 bytes   | 0 to 18,446,744,073,709,551,615  |
+# Loops
+### while loop
+`````c
+while (expresion)
+	[block]
+```
+The while loop allows you to repeat a block until a specified expression becomes false.
+### for loop
+```c
+for (initialize; condition; update)
+		[block]
+```
+The for statement allows you to repeat a block of a specific number of times, the block of a for statement is executed one or more times until an optional condition becomes false.
+
+You can use optional expressions
+```c
+for (; ;)	/*infinite loop*/
+		;
+```
+# control structures
+```c
+if (expression)		/*if the expression is true (the value of the expression is not 0) then the block is executed*/
+	[block]
+```
+```c
+if (expresion)		/*if the expression is true, then block 1 is executed, otherwise block 2 is executed*/
+	[block1]
+else
+	[block2]
+```
 ### man or help:
 
 * ascii
