@@ -1,4 +1,5 @@
 # C - Hello, World
+Created by Denis Ritchie, -C was conducted at AT&T Bell Laboratories between 1969 and 1973; according to Dennis Ritchie, the most creative period took place in 1972.
 ### man or help:
 
 * gcc
@@ -8,13 +9,17 @@
 # Requirements 
 * Allowed editors: vi, vim, emacs
 * All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
+- gcc:performs preprocessing, compilation, assembly and linking, the options usually allow you to stop that process at an intermediate stage
 * The first line of all your files should be exactly #!/bin/bash
-# introduction in c What is C?
-C is an imperative (procedural) language.
-All the code has to be inside a function.
-C files are source code of your program.
-You have to compile C files with a compiler (for instance gcc) to create an
-executable file.
+# introduction in c, What is C?
+C is an imperative (procedural) language, all the code has to be inside a function, the C files are the source code of your program (line of texot with the steps that the computer must follow to execute a loader), the C files must be compiled to create an executable file.
+- is a language very close to h
+hardware 
+# gcc compilation process
+![image text](https://www3.ntu.edu.sg/home/ehchua/programming/cpp/images/GCC_CompilationProcess.png)
+* Preprocessor: expands macros (code fragments of a program that are replaced by the macro value - name), removes comments, leaves the source code.
+* Compiler: translates them into assembly code, and writes the instructions.
+* Assembler: binary code - links libraries (adds function statements from libraries).
 ### Comments 
 /*comment*/
 /**
@@ -37,7 +42,8 @@ executable file.
 # Tasks
 ### general main
 cat main.c
-#include <stdio.h>
+```c
+#include <stdio.h> (standard library - code blocks of used functions)
 
 /**
  * main - Entry point
@@ -48,6 +54,7 @@ int main(void)
 {
     return (0);
 }
+```
 ### 0. Preprocessor
 Write a script that runs a C file through the preprocessor and save the result into another file.
 The C file name will be saved in the variable $CFILE
@@ -96,6 +103,7 @@ Warnings are allowed
 Your program should return 0
 You might have to install the package libc6-dev-i386 on your Linux (Vagrant) to test the -m32 gcc option
 - printf prints results with a format, allows printing variables and is a variadic function since it accepts several parameters. 
+- %zu print the value of a variable size_t
 - sizeof The function receives as a single parameter either the name of a variable, or the name of a data type, and returns its size in bytes, reserving an exact amount of memory. 
 # advanced
 ### 7. Intel
@@ -113,3 +121,5 @@ You are not allowed to use any functions listed in the NAME section of the man (
 Your program should return 1
 Your program should compile without any warnings when using the -Wall gcc option
 * man write
+**syntax**
+`write(output or input, "str", string bytes);`
