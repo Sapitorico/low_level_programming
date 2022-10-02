@@ -13,17 +13,16 @@ int main(void)
 		{
 			printf("FizzBuzz\t");
 		}
-		else if (i % 3 == 0)
+		else if ((i % 3) == 0)
 		{
 			printf("Fizz\t");
 		}
-		else if (i % 5 == 0)
+		else if ((i % 5) == 0)
 		{
 			printf("Buzz\t");
 		}
 		else
-			printf("%d\n", i);
+			printf("%d\t", i);
 	}
-	printf("\n");
 	return (0);
 }
