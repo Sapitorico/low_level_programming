@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	char *str = "_putchar";
+	char *str = "_putchar";		/*char type pointer to an array with a strign*/
 
 	while (*str)
 	{
