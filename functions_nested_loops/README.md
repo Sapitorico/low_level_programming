@@ -26,7 +26,7 @@ A nested loop is a loop that is included in the statement block of another block
 
 Nested loops with independent variables are loops in which none of the variables in one of the loops is involved in either the continuation condition or the step expression of the other loops.
 * example
-![image text](https://eecs.oregonstate.edu/ecampus-video/CS161/template/chapter_5/chapter5_images/5_22.pnghttps://eecs.oregonstate.edu/ecampus-video/CS161/template/chapter_5/chapter5_images/5_22.png)
+![image text](https://eecs.oregonstate.edu/ecampus-video/CS161/template/chapter_5/chapter5_images/5_22.png)
 
 ### Arrays
 An array is a means of storing a set of objects of the same class.
