@@ -25,7 +25,7 @@ if the value of the expression is omitted the returned value will be undefined.
 A nested loop is a loop that is included in the statement block of another block. Loops can have any level of nesting, en los bucles anidados es importante utilizar variables de control distintas, para no obtener resultados inesperados.
 
 Nested loops with independent variables are loops in which none of the variables in one of the loops is involved in either the continuation condition or the step expression of the other loops.
-* example
+* **example**
 
 ![image text](https://eecs.oregonstate.edu/ecampus-video/CS161/template/chapter_5/chapter5_images/5_22.png)
 
