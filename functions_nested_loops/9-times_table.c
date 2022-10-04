@@ -4,33 +4,35 @@
  */
 void times_table(void)
 {
-	int cociente = 0;
-	int divisor = 0;
+	int dividend;
+	int divider;
 	int resultado;
+	char *sep = " ";
+	char *sep1 = ",";
 
-	for (cociente = 0; cociente < 10; cociente++)	/*x-axis*/
+	for (divider = 0; divider < 10; divider++)	/*x-axis*/
 	{
-		for (divisor = 0; divisor < 10; divisor++)	/*y-axis*/
+		for (dividend = 0; dividend < 10; dividend++)	/*y-axis*/
 		{
-			resultado = cociente * divisor;	/*result the x * y*/
+			resultado = divider * dividend;		/*result the x * y*/
 			if (resultado > 9)
 			{
-				_putchar((resultado / 10) + '0');
-				_putchar((resultado % 10) + '0');
+				_putchar((resultado / 10) + '0');	/*prints the first digit in ASCII*/
+				_putchar((resultado % 10) + '0');	/*prints last digit in ASCII value*/
 			}
-			else if (divisor != 0)
+			else if (dividend != 0)		/*from 1 to 8 print the separator plus the result*/
 			{
-				_putchar(' ');
+				_putchar(*sep);
 				_putchar(resultado + '0');
 			}
 			else
-				_putchar(resultado + '0');
-			if (divisor != 9)
+				_putchar(resultado + '0');	/*prints the buried as long as it is not greater than 9*/
+			if (dividend != 9)	/*prints the separator and the resudate as long as it is different from 9*/
 			{
-				_putchar(',');
-				_putchar(' ');
+				_putchar(*sep1);
+				_putchar(*sep);
 			}
 		}
-		_putchar('\n');
+		_putchar('\n'); 	/*line break between each result on the x-axis*/
 	}
 }

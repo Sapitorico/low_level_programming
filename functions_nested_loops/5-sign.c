@@ -9,12 +9,12 @@ int print_sign(int n)
 	if (n > 0)
 	{
 		_putchar(43);
-		return (1);
+		return (1);	/*any return other than 0 indicates an error*/
 	}
 	else if (n == 0)
 	{
 		_putchar('0');
-		return (0);
+		return (0);	/*means the program was successful*/
 	}
 	else
 		_putchar('-');

@@ -8,7 +8,7 @@ int _abs(int i)
 {
 	if (i < 0)
 	{
-		i = (-1) * i;
+		i = (-1) * i;	/*returns a positive value if a negative value is received*/
 		return (i);
 	}
 	else if (i > 0)
