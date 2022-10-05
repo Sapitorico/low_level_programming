@@ -9,7 +9,7 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 15 == 0)
+		if (i % 15 == 0)	/*if the remainder is 0*/
 		{
 			printf("FizzBuzz");
 		}
@@ -25,7 +25,7 @@ int main(void)
 		{
 			printf("%i", i);
 		}
-		if (i < 100)
+		if (i < 100)	/*prints spaces after all less than 100*/
 			printf(" ");
 	}
 	printf("\n");

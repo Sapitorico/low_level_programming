@@ -39,3 +39,6 @@ Nested loops with independent variables are loops in which none of the variables
 
 ### logical operators
 **||** OR, **&&** AND, **!** NOT
+# X-axis and Y-axis
+
+![image text](https://www.mvblog.cl/wp-content/uploads/2011/08/acad_coordenadas01-1.png)
