@@ -27,4 +27,7 @@ void print_square(int size);
 
 void print_triangle(int size);
 
+/*advanced*/
+void print_number(int n);
+
 #endif /*main.h*/
