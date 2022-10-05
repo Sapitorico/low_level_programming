@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_number - function that prints an integer.
+ * @n: inter resived
  */
 void print_number(int n)
 {
