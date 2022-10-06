@@ -2,6 +2,7 @@
 #define MAIN_H
 /*libreries*/
 #include <stdio.h>
+#include <unistd.h>
 
 /*prototype*/
 
@@ -12,4 +13,6 @@ void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 
 int _strlen(char *s);
+
+void _puts(char *str);
 #endif /*main.h*/
