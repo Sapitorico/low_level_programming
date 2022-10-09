@@ -16,7 +16,8 @@ It is a type of data called variable whose value is the memory address of anothe
 * char -> 1 byte
 * int -> 4 bytes
 * float -> 4 bytes
-`char c;`
+`char c;
+`
 ![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/char_c_declaration.png)
 Each variable is a memory location and each location has an address that can be accessed with operator (&), you must declare a pointer before using it.
 
@@ -31,6 +32,7 @@ Note that: You can use %p to print addresses (the values of pointers) with print
 - (the **sizeof** operator is used to determine the size of a variable.)
 
 The computer will also reserve the right amount of memory for it to store its value.
+
 ![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/p.png)
 # Dereferencing
 The main characteristic of a pointer is to be able to manipulate values stored in the memory address to which they point, this is called de-referencing, for which the operator ( * ) is used.
@@ -59,12 +61,18 @@ int main(void)
 
 ```
 - The value received by a function is copied into a new local variable only available to the invoked function.
+
 ![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/n_m.png)
 ![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/n_m.png)
-after m 402;
+
+after m = 402;
+
 ![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/nm402.png)
 ![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/nm402.png)
+
 at the end of the process the variable used by the function is destroyed but its value remains until another function uses the space to set another value.
+
 ![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/nomorem.png)
 ![iamge text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/nomorem.png)
+
 This rule applies to any type of variable. But since the values of pointers are addresses, it is possible to modify a variable from outside the function it is declared.
