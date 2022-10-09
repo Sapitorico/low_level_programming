@@ -18,12 +18,12 @@ It is a type of data called variable whose value is the memory address of anothe
 * int -> 4 bytes
 * float -> 4 bytes
 
-<img src="https://i.ytimg.com/vi/f2i0CnUOniA/maxresdefault.jpg"  width="200"/>
+<img src="https://i.ytimg.com/vi/f2i0CnUOniA/maxresdefault.jpg"  width="500"/>
 
 Each variable is a memory location and each location has an address that can be accessed with operator (&), you must declare a pointer before using it.
 
 - example :
-![image text](https://slidetodoc.com/presentation_image_h/2d0191adde6b486905ee1c6e9c1e910c/image-11.jpg =250x)
+<img src="https://slidetodoc.com/presentation_image_h/2d0191adde6b486905ee1c6e9c1e910c/image-11.jpg" width="500"/>
 
 Note that: You can use %p to print addresses (the values of pointers) with printf
 
