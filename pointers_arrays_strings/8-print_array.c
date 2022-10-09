@@ -8,7 +8,7 @@ void print_array(int *a, int n)
 {
 	int len = _len(a);
 
-	for (n = 0; a[n] != '\0'; n++)
+	for (n = 0; a[n] <= len; n++)
 	{
 		if (n < len)
 		{
