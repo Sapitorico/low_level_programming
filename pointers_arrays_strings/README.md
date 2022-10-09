@@ -1,13 +1,4 @@
 # C - Pointers, arrays and strings 
-### man or help:
-* sizeof
-* swap
-* strlen
-* puts
-* rev
-* strrev
-* printf
-* strcpy
 ## Pointers
 Pointers are very useful, some C programming tasks are more easily performed with pointers, such as dynamic memory allocation that cannot be performed without pointers.
 
@@ -110,3 +101,12 @@ These are one-dimensional character strings that end in a null character '0', th
 ![image text](https://dyclassroom.com/image/topic/c/pointers-string/str.jpg)
 
 * actually the compiler automatically places the '\0' at the end of each index.
+### man or help:
+* sizeof
+* swap
+* strlen
+* puts
+* rev
+* strrev
+* printf
+* strcpy
