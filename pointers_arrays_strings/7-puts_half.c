@@ -10,9 +10,8 @@ void puts_half(char *str)
 
 	if (n % 2 == 0)
 	{
-		for (; str[n] < len;)
+		for (; str[n] != '\0'; n++)
 		{
-			n++;
 			_putchar(str[n]);
 		}
 	}
