@@ -1,6 +1,5 @@
 # C - Pointers, arrays and strings 
 ### man or help:
-
 * sizeof
 * swap
 * strlen
@@ -37,12 +36,16 @@ Note that: You can use %p to print addresses (the values of pointers) with print
 The computer will also reserve the right amount of memory for it to store its value.
 
 ![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/p.png)
-# Dereferencing
+## Dereferencing
 <img src="https://slidetodoc.com/presentation_image_h/2d0191adde6b486905ee1c6e9c1e910c/image-12.jpg" width="500"/>
 
 The main characteristic of a pointer is to be able to manipulate values stored in the memory address to which they point, this is called de-referencing, for which the operator ( * ) is used.
 * Note that * has a different meaning depending on the context (declaring vs dereferencing pointers).
-# Functions parameters are passed by value
+### How to use 
+* Define a pointer variable.
+* Assign the address of a variable to a pointer.
+* Access the value at the memory address using the operator.
+## Functions parameters are passed by value
 * When we call a function in C, parameters are copied.
 ```c
 void modif_my_param(int m)
@@ -70,14 +73,38 @@ int main(void)
 ![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/n_m.png)
 ![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/n_m.png)
 
-after m = 402;
+- after m = 402;
 
 ![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/nm402.png)
 ![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/nm402.png)
 
-at the end of the process the variable used by the function is destroyed but its value remains until another function uses the space to set another value.
+- at the end of the process the variable used by the function is destroyed but its value remains until another function uses the space to set another value.
 
 ![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/nomorem.png)
 ![iamge text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/nomorem.png)
 
 This rule applies to any type of variable. But since the values of pointers are addresses, it is possible to modify a variable from outside the function it is declared.
+# Array - type of data structure
+They are constant memory arrays that contain a quantity of value of the same type.
+
+- **declaration syntax:**
+
+`type var_ame[number of element]`.
+
+* Type: type of elements to be contained.
+* Number of elements must be constant and greater than
+
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Array-In-C.png" width="500"/>
+* all matrices consist of a memory address 
+* all matrices have as value 0 element index which is called base index, the last one will be the total size of the matrix - 1.
+## Important details
+* C supports multidimensional arrays, the simplest of which is two-dimensional.
+* C allows a function to return an array.
+* You can pass to the function a pointer to an array by specifying the name of the array without an index.
+* You can generate a pointer to the first element of an array by simply specifying the name of the array * You can generate a pointer to the first element of an array by simply specifying the name of the array
+# String
+These are one-dimensional character strings that end in a null character '0', they contain the characters that make up the string followed by a null.
+
+![image text](https://dyclassroom.com/image/topic/c/pointers-string/str.jpg)
+
+* actually the compiler automatically places the '\0' at the end of each index.
