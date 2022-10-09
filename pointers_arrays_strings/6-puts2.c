@@ -5,25 +5,9 @@
  */
 void puts2(char *str)
 {
-	int i;
-	int len = _strlen(str);
-
-	for (; s[len]; i += 2)
+	for (; *str; str += 2)
 	{
-		_putchar(str[i]);
+		_putchar(*str);
 	}
 	_putchar('\n');
-}
-/**
- * _strlen - returns the length of a string
- * @s: pinter to addres os strign
- * Return: string length
- */
-int _strlen(char *s)
-{
-	int count = 0;
-
-	for (; s[count] != '\0'; count++)
-		;
-	return (count);
 }
