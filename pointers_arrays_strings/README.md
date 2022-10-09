@@ -18,7 +18,9 @@ It is a type of data called variable whose value is the memory address of anothe
 * float -> 4 bytes
 `char c;
 `
+
 ![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/char_c_declaration.png)
+
 Each variable is a memory location and each location has an address that can be accessed with operator (&), you must declare a pointer before using it.
 
 Note that: You can use %p to print addresses (the values of pointers) with printf
