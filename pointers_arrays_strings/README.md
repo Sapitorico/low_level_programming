@@ -1,4 +1,4 @@
-# C - Pointers, arrays and strings
+# C - Pointers, arrays and strings 
 ### man or help:
 
 * sizeof
@@ -9,17 +9,16 @@
 * strrev
 * printf
 * strcpy
-
+## Pointers
 Pointers are very useful, some C programming tasks are more easily performed with pointers, such as dynamic memory allocation that cannot be performed without pointers.
 
 It is a type of data called variable whose value is the memory address of another variable or constant, it is clear that every time a variable is declared, the computer reserves memory for this variable that is defined in byte (1 byte = 8 bits with each bit being 0 or 1). The space reserved for the variable is its address. and when we assign a value to this variable, the computer will store this value at its address.
+
 * char -> 1 byte
 * int -> 4 bytes
 * float -> 4 bytes
-`char c;
-`
 
-![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/char_c_declaration.png)
+![image text](https://i.ytimg.com/vi/f2i0CnUOniA/maxresdefault.jpg)
 
 Each variable is a memory location and each location has an address that can be accessed with operator (&), you must declare a pointer before using it.
 
