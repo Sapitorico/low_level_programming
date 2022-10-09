@@ -6,7 +6,7 @@
 void puts2(char *str)
 {
 	int i = 0;
-	int len = _strlet(str);
+	int len = _strlen(str);
 
 	for (; i < len; i += 2)
 	{
