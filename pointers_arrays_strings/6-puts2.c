@@ -7,9 +7,9 @@ void puts2(char *str)
 {
 	for (; *str; str += 2)
 	{
-		if ((str % 2) == 0 )
+		if ((*str % 2) == 0 )
 		{
-			_putchar(*str);
+			_putchar(str[str]);
 		}
 	}
 	_putchar('\n');
