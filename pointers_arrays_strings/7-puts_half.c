@@ -1,18 +1,17 @@
 #include "main.h"
 /**
  * pust_half - prints half of a string
- *@str: pointer to array of chars
+ *@str: char array string type
  */
 void puts_half(char *str)
 {
 	int len = _strlen(str);
 	int n = (len - 1) / 2;
 
-	if (n % 2 == 0)
+	if (n % 2 != 0)
 	{
-		for (; str[n];)
+		for (; str[n]; n++)
 		{
-			n++;
 			_putchar(str[n]);
 		}
 	}
