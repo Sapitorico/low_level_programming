@@ -6,29 +6,16 @@
  */
 void print_array(int *a, int n)
 {
-	int len = _len(a);
+	int i = 0;
 
-	for (n = 0; a[n] <= len; n++)
+	for (; i < n; n++)
 	{
-		if (n < len)
+		if (i  == n - 1)
 		{
-			printf("%i, ", a[n]);
+			printf("%d", a[i]);
 		}
 		else
-			printf("%i", a[n]);
+			printf("%d, ", a[n]);
 	}
 	printf("\n");
-}
-/**
- * _len - returns the length of a string
- * @num: pointer to array of integers
- * Return: string length
- */
-int _len(int *num)
-{
-	int count = 0;
-
-	for (; num[count] != '\0'; count++)
-		;
-	return (count);
 }
