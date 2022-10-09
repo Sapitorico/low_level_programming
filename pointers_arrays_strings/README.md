@@ -97,7 +97,9 @@ They are constant memory arrays that contain a quantity of value of the same typ
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Array-In-C.png" width="500"/>
 * all matrices consist of a memory address 
 * all matrices have as value 0 element index which is called base index, the last one will be the total size of the matrix - 1.
+
 ## Important details
+
 * C supports multidimensional arrays, the simplest of which is two-dimensional.
 * C allows a function to return an array.
 * You can pass to the function a pointer to an array by specifying the name of the array without an index.
