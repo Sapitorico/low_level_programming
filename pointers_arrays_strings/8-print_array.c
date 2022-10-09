@@ -8,7 +8,7 @@ void print_array(int *a, int n)
 {
 	int len = _len(a) - 1;
 
-	for (n = 0; n <= len; n++)
+	for (n = 0; a[n] <= len; n++)
 	{
 		if (n < len)
 		{
@@ -21,7 +21,7 @@ void print_array(int *a, int n)
 }
 /**
  * _len - returns the length of a string
- * @s: pointer to array of integers
+ * @num: pointer to array of integers
  * Return: string length
  */
 int _len(int *num)
