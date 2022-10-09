@@ -5,12 +5,12 @@
  */
 void puts_half(char *str)
 {
-	int len = _strlen(str) - 1;
-	int n = len / 2;
+	int len = _strlen(str) - 1;	/*string length minus the null charcater*/
+	int n = len / 2;	/*contains half of string*/
 
-	if (n % 2 == 0)
+	if (n % 2 == 0)		/*if the number is even*/
 	{
-		for (n++; str[n]; n++)
+		for (n++; str[n]; n++)	/*itera from n+1*/
 		{
 			_putchar(str[n]);
 		}
