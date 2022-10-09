@@ -6,7 +6,7 @@
  */
 void print_array(int *a, int n)
 {
-	int len = _len(a);
+	int len = _len(a) - 1;
 
 	for (n = 0; n <= len; n++)
 	{
@@ -24,11 +24,11 @@ void print_array(int *a, int n)
  * @s: pointer to array of integers
  * Return: string length
  */
-int _len(int *s)
+int _len(int *num)
 {
 	int count = 0;
 
-	for (; s[count] != '\0'; count++)
+	for (; num[count] != '\0'; count++)
 		;
 	return (count);
 }
