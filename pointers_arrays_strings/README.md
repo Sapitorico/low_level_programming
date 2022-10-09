@@ -18,7 +18,7 @@ It is a type of data called variable whose value is the memory address of anothe
 * int -> 4 bytes
 * float -> 4 bytes
 
-![image text](https://i.ytimg.com/vi/f2i0CnUOniA/maxresdefault.jpg =250x)
+<img src="https://i.ytimg.com/vi/f2i0CnUOniA/maxresdefault.jpg"  width="200"/>
 
 Each variable is a memory location and each location has an address that can be accessed with operator (&), you must declare a pointer before using it.
 
