@@ -6,9 +6,9 @@
  */
 void print_array(int *a, int n)
 {
-	int len = _len(a) - 1;
+	int len = _len(a);
 
-	for (n = 0; a[n] <= len; n++)
+	for (n = 0; a[n] != '\0'; n++)
 	{
 		if (n < len)
 		{
