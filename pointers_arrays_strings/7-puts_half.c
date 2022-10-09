@@ -1,4 +1,8 @@
 #include "main.h"
+/**
+ * pust_half - prints half of a string
+ *@str: pointer to array of chars
+ */
 void puts_half(char *str)
 {
 	int len = _strlen(str) - 1;
@@ -14,14 +18,16 @@ void puts_half(char *str)
 	}
 	_putchar('\n');
 }
+/**
+ * _strlen - returns the length of a string
+ * @s: pinter to addres os strign
+ * Return: string length
+ */
 int _strlen(char *s)
 {
-	int i = 0;
+	int count = 0;
 
-	while (*s != '\0')
-	{
-		s++;
-		i++;
-	}
-	return (i);
+	for (; s[count] != '\0'; count++)
+		;
+	return (count);
 }
