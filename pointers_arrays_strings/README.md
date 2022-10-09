@@ -22,8 +22,10 @@ It is a type of data called variable whose value is the memory address of anothe
 
 Each variable is a memory location and each location has an address that can be accessed with operator (&), you must declare a pointer before using it.
 
-Note that: You can use %p to print addresses (the values of pointers) with printf
 - example :
+![image text](https://slidetodoc.com/presentation_image_h/2d0191adde6b486905ee1c6e9c1e910c/image-11.jpg)
+
+Note that: You can use %p to print addresses (the values of pointers) with printf
 
 `type *var_name` 
 
@@ -36,6 +38,8 @@ The computer will also reserve the right amount of memory for it to store its va
 
 ![image text](https://intranet.hbtn.io/images/contents/low_level_programming/projects/p.png)
 # Dereferencing
+![image text](https://slidetodoc.com/presentation_image_h/2d0191adde6b486905ee1c6e9c1e910c/image-12.jpg)
+
 The main characteristic of a pointer is to be able to manipulate values stored in the memory address to which they point, this is called de-referencing, for which the operator ( * ) is used.
 * Note that * has a different meaning depending on the context (declaring vs dereferencing pointers).
 # Functions parameters are passed by value
