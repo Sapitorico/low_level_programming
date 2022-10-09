@@ -8,7 +8,7 @@ void print_rev(char *s)
 	int len = _strlen(s);
 	int rev;
 
-	for (rev = len - 1; rev >= 0; rev--)
+	for (rev = len - 1; rev >= 0; rev--)	/*reads the characters from the position of len before null and print to the initial 0 position of the string*/
 	{
 		_putchar(s[rev]);
 	}

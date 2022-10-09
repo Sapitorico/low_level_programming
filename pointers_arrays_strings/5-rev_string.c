@@ -5,15 +5,15 @@
  */
 void rev_string(char *s)
 {
-	int len = (_strlen(s) - 1);
+	int len = (_strlen(s) - 1);	/*ets the len to the character before the null character*/
 	int i = 0;
-	char temp;
+	char temp;	/*time variable */
 
-	for (; i <= len / 2; i++)
+	for (; i <= len / 2; i++)	/*increases to be less than and equal to one half of the string*/
 	{
-		temp = s[i];
-		s[i] = s[len - i];
-		s[len - i] = temp;
+		temp = s[i];	/*temp takes the value of the position of the iterator*/
+		s[i] = s[len - i];	/*modifies the value of the position of i with that of len minus the position of i*/
+		s[len - i] = temp;	/*len - i takes the value of the character of the position of i*/
 	}
 }
 /**

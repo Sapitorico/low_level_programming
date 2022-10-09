@@ -6,8 +6,9 @@
  */
 void swap_int(int *a, int *b)
 {
-	int num = *a;
+	int num = *a;	/*declares the value of num with the value containing the pointer to *a*/
 
-	*a = *b;
-	*b = num;
+	/*exchange of values*/
+	*a = *b;	/*reference the value of *b to *a*/
+	*b = num;	/*reference the value of *a to *b*/
 }
