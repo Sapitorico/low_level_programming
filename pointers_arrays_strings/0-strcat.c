@@ -10,7 +10,7 @@ char *_strcat(char *dest, char *src)
 	int len = _strlen(dest);
 	int i;
 
-	for (i = 0; i < _strlen(src); i++)
+	for (i = 0; i < _strlen(src); i++)	/*iterates within the array until smaller '\0' string*/
 	{
 		dest[len + i] = src[i];		/*concatenates the string*/
 	}
