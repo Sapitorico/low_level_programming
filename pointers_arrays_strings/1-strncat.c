@@ -11,7 +11,7 @@ char *_strncat(char *dest, char *src, int n)
 	int i;
 	int len = _strlen(dest);
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	for (i = 0; i < n && src[i] != '\0'; i++)	/*it will use at most n bytes from src*/
 	{
 		dest[len + i] = src[i];
 	}
