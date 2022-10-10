@@ -1,5 +1,10 @@
 #include "main.h"
 /**
+ * _strncat - concatenates two strings
+ *@dest: concatenated destination
+ *@src: pointer to string to be concatenated
+ *@n: n is the number of bytes of src
+ * Return: pointer to the resulting string
  */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -13,6 +18,11 @@ char *_strncat(char *dest, char *src, int n)
 	dest[len + i] = '\0';
 	return (dest);
 }
+/**
+ * _strlen - returns the length of a string
+ * @s: pinter to addres os strign
+ * Return: string length
+ */
 int _strlen(char *s)
 {
 	int count = 0;
