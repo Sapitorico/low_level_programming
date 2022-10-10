@@ -110,3 +110,4 @@ These are one-dimensional character strings that end in a null character '0', th
 * strrev
 * printf
 * strcpy
+* strcat
