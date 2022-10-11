@@ -8,7 +8,7 @@ void print_rev(char *s)
 	int len = _strlen(s);
 	int rev;
 
-	for (rev = len - 1; rev >= 0; rev--)	/*reads the characters from the position of len before null and print to the initial 0 position of the string*/
+	for (rev = len - 1; rev >= 0; rev--)	/*starts from the inde of n - 1 and decreases until it equals the index 0*/
 	{
 		_putchar(s[rev]);
 	}
@@ -17,7 +17,7 @@ void print_rev(char *s)
 /**
  * _strlen - returns the length of a string
  * @s: pinter to addres os strign
- * Return: string length
+ * Return: n elements of the string
  */
 int _strlen(char *s)
 {

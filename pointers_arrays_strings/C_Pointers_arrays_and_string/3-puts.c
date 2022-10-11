@@ -6,6 +6,6 @@
 void _puts(char *str)
 {
 	for (; *str; str++)
-		_putchar(*str);
+		_putchar(*str);		/*prints the value that points the address to the variable str*/
 	_putchar('\n');
 }

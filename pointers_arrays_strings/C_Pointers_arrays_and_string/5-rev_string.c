@@ -5,14 +5,14 @@
  */
 void rev_string(char *s)
 {
-	int len = (_strlen(s) - 1);	/*ets the len to the character before the null character*/
+	int len = (_strlen(s) - 1);	/*n elements -1 to position at the last n character of the string and avoid the null*/
 	int i = 0;
-	char temp;	/*time variable */
+	char temp;	/*time variable*/
 
-	for (; i <= len / 2; i++)	/*increases to be less than and equal to one half of the string*/
+	for (; i <= len / 2; i++)	/*initialized in the base index, iterate until it is equal to the mid character of the strign*/
 	{
 		temp = s[i];	/*temp takes the value of the position of the iterator*/
-		s[i] = s[len - i];	/*modifies the value of the position of i with that of len minus the position of i*/
+		s[i] = s[len - i];	/*modifies the value taken in the index of i with that of index of len minus the value of i*/
 		s[len - i] = temp;	/*len - i takes the value of the character of the position of i*/
 	}
 }

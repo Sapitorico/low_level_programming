@@ -8,9 +8,9 @@ void print_array(int *a, int n)
 {
 	int i;
 
-	for (i = 0; i < n; i++)		/*goes from index 0 to less than total number of element*/
+	for (i = 0; i < n; i++)		/*starts from index 0 to less than the total number of elements*/
 	{
-		if (i == n - 1)		/*when i equals the last index*/
+		if (i == n - 1)		/*if it is the last value of the array prints it without ', '*/
 		{
 			printf("%d", a[i]);
 		}
