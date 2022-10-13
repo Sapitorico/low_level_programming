@@ -18,7 +18,7 @@ void rev_string(char *s)
 }
 /**
  * _strlen - returns the length of a string
- * @s: pinter to addres os strign
+ * @s: pinter to strign
  * Return: string length
  */
 int _strlen(char *s)
