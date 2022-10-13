@@ -11,7 +11,7 @@ char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
-	for (i = 0; i < n; i++)
-		s[i] = b;
-	return (s);
+	for (i = 0; i < n; i++)	/*increase in the specified positions I want to access*/
+		s[i] = b;	/*full by increased position the b constant character*/
+	return (s);	/*initial position*/
 }
