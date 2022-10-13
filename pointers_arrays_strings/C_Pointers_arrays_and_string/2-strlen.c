@@ -2,6 +2,7 @@
 /**
  * _strlen - returns the length of a string
  * @s: pinter to addres os strign
+ *
  * Return: all elements of the stirng
  */
 int _strlen(char *s)
