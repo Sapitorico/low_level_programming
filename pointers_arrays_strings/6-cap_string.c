@@ -13,7 +13,7 @@ char *cap_string(char *s)
 		s[i] -= - 32;
 	for (; s[i]; i++)
 	{
-		for (; separators[countsep]; count++)
+		for (; separators[countsep]; countsep++)
 		{
 			if (s[i] == separators[countsep])
 			{
