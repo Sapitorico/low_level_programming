@@ -13,9 +13,9 @@ char *cap_string(char *s)
 		s[i] -= - 32;
 	for (; s[i]; i++)
 	{
-		for (; separator[count]; count++)
+		for (; separators[countsep]; count++)
 		{
-			if (s[i] == separator[count])
+			if (s[i] == separators[countsep])
 			{
 				if (s[i + 1] >= 97 && s[i + 1] <= 122)
 				{
