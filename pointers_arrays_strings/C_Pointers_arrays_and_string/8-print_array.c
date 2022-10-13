@@ -8,7 +8,7 @@ void print_array(int *a, int n)
 {
 	int i;
 
-	for (i = 0; i < n; i++)		/*starts from index 0 to less than the total number of elements*/
+	for (i = 0; i < n; i++)	/*starts from index 0 to less than the total number of elements*/
 	{
 		if (i == n - 1)		/*if it is the last value of the array prints it without ', '*/
 		{
