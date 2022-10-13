@@ -1,4 +1,4 @@
-# C - Pointers, arrays and strings 
+# C - Pointers, arrays and strings
 ## Pointers
 Pointers are very useful, some C programming tasks are more easily performed with pointers, such as dynamic memory allocation that cannot be performed without pointers.
 
@@ -111,3 +111,23 @@ These are one-dimensional character strings that end in a null character '0', th
 * printf
 * strcpy
 * strcat
+# reused functions
+## _strlen
+Calculates the length of the string excluding the '0' and returns the number n of elements in the string.
+
+```c
+#include "main.h"
+/**
+ * _strlen - returns the length of a string
+ * @s: pinter to addres os strign
+ * Return: all elements of the stirng
+ */
+int _strlen(char *s)
+{
+	int count = 0;
+
+	for (; s[count]; count++)
+		;
+	return (count);
+}
+```
