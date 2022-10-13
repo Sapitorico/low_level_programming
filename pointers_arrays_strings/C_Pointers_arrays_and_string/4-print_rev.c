@@ -5,10 +5,10 @@
  */
 void print_rev(char *s)
 {
-	int len = _strlen(s);
+	int len = _strlen(s) - 1;
 	int rev;
 
-	for (rev = len - 1; rev >= 0; rev--)	/*starts from the inde of n - 1 and decreases until it equals the index 0*/
+	for (rev = len; rev >= 0; rev--)	/*starts from the inde of n - 1 and decreases until it equals the index 0*/
 	{
 		_putchar(s[rev]);
 	}
