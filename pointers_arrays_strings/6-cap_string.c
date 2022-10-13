@@ -2,12 +2,13 @@
 /**
  * cap_string - capitalizes all words of a string.
  * @s: pinter to the string
+ * Return: position s
  */
 char *cap_string(char *s)
 {
 	int i = 0;
 	int countsep = 0;
-	char separators [] ={32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+	char separators [] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
 	if (s[i] >= 97 && s[i] <= 122)
 		s[i] = (s[i] - 32);
