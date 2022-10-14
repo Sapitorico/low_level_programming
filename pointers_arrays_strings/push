@@ -1,7 +1,0 @@
-#!/bin/bash
-git add .
-read -p 'messege: ' m
-git commit -m "$m"
-git push
-clear
-ls
