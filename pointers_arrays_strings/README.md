@@ -138,6 +138,37 @@ A pointer to a pointer is a form of multiple indirection, or a chain of pointers
 
 A variable that is a pointer to a pointer must be declared as such. This is done by placing an additional asterisk in front of its name. For example, the following declaration declares a pointer to a pointer of type int −
 
-int **var;
+**int **var;**
+# Data Structures
 
+It is a way to store, find, use and create data efficiently according to the task at hand.
 
+The most basic structures used are
+* Arrays
+* Linked lists
+
+The idea is to conceptualize how data is stored, searched, edited and what these operations will contribute to the space/time complexity of your real-time program.
+## Data types
+is a way of classifying various types of data, such as integers, strings, etc., which determine the values that can be used with the corresponding data type, the type of operations that can be performed on the corresponding data, the type of operations that can be performed on the corresponding data, and the type of operations that can be performed on the corresponding data.
+* Built-in
+* Derived
+### Built-in
+Data types for which a language has built-in support are known as built-in.
+- Itegers
+- Boolean (true, false)
+- Floating (decimal number)
+- characters and strings
+### Derivatives
+They are implementation independent, since they can be implemented in one form or another, they are known as derived data types. These are usually created by combining primary or built-in data types, and associated operations on them
+- Lists
+- Arrays
+- Stack
+- queue
+# Array data structure classification
+* Linear data mask: in which its elements are organized in a sequential linear fashion.
+* static data structure: has a fixed memory size.
+
+Array is a data structure for storing the same data type of elements continuously.
+* You need to access the elements using the index.
+* Know the size of the array before defining the memory.
+* Speed to l iterate through data sequence elements.

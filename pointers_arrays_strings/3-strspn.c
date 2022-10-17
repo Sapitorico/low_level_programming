@@ -10,9 +10,9 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
 
-	if (!s || !accept)
+	if (!s || !accept)	/*I verify that they are not null pointer*/
 		return (i);
-	while (*s && _strchr(accept, *s++))
+	while (*s && _strchr(accept, *s++))	/*count from the indicated position*/
 	{
 		i++;
 	}

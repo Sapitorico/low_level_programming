@@ -31,6 +31,8 @@ char *_strcpy(char *dest, char *src);
 
 int _len(int *s);
 
+int _atoi(char *s);
+
 /*second project prototypes*/
 
 char *_strcat(char *dest, char *src);
