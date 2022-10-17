@@ -180,7 +180,7 @@ The memory of a c program contains five segments
     			|----------------------|
     			|                      |   Functions and variable are declared
     			|        STACK         |   on the stack.
-    base pointer ->     | - - - - - - - - - - -|
+	    base pointer ->     | - - - - - - - - - - -|
     			|          |           |
     			|          v           |
     			:                      :
