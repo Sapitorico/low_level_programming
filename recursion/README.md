@@ -17,3 +17,7 @@ Runtime memory management.
 Recursion function.
 
 <img src="https://i.stack.imgur.com/PK6Ht.png" width="400"/>
+# Flowchart of Recursion
+In the following image, there is a recursive function inside which there is a recursive call that calls the recursive function until the condition of the problem is true. If the condition gets satisfied, then the condition is false, and the program control goes for the remaining statements and stops the program.
+
+<img src="https://scaler.com/topics/images/flowchart-of-recursion.webp" width="500"/>
