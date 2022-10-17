@@ -192,16 +192,16 @@ The memory of a c program contains five segments
     			:                      :    allocate)
     			|          ^           |
     			|          |           |
-       	    brk point -> |- - - - - - - - - - - |   Dynamic memory is declared on the heap
-      	                  |         HEAP         |
+       	   brk point -> |- - - - - - - - - - - |   Dynamic memory is declared on the heap
+      	                |         HEAP         |
         	                |                      |
                 	        |----------------------|
-                      	  |         BSS          |   Uninitialized data (BSS)
+                      	 |         BSS          |   Uninitialized data (BSS)
                        	 |----------------------|
                        	 |        Data          |   Initialized data (DS)
                        	 |----------------------|
                        	 |        Text          |   Binary code
-    	Low Addresses ----> '----------------------'
+    Low Addresses ----> '----------------------'
 
 Each contains its own read, write and execute permissions, if a program attempts to access memory in an unauthorized manner, a segmentation error occurs.
 
