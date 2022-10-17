@@ -196,11 +196,11 @@ The memory of a c program contains five segments
       	                |         HEAP         |
         	                |                      |
                 	        |----------------------|
-                     	 |         BSS          |   Uninitialized data (BSS)
-                      	 |----------------------|
-                      	 |        Data          |   Initialized data (DS)
-                      	 |----------------------|
-                      	 |        Text          |   Binary code
+                     	|         BSS          |   Uninitialized data (BSS)
+                      	|----------------------|
+                      	|        Data          |   Initialized data (DS)
+                      	|----------------------|
+                      	|        Text          |   Binary code
     	Low Addresses ----> '----------------------'
 
 Each contains its own read, write and execute permissions, if a program attempts to access memory in an unauthorized manner, a segmentation error occurs.
