@@ -16,3 +16,4 @@ Finding the correct path in a maze using backtracking.
 Runtime memory management.
 Recursion function.
 
+<img src="https://i.stack.imgur.com/PK6Ht.png" width="400"/>
