@@ -172,3 +172,62 @@ Array is a data structure for storing the same data type of elements continuousl
 * You need to access the elements using the index.
 * Know the size of the array before defining the memory.
 * Speed to l iterate through data sequence elements.
+# Memory design in c
+The memory of a c program contains five segments 
+## Memory layout 
+High Addresses ---> .----------------------.
+                    |      Environment     |
+                    |----------------------|
+                    |                      |   Functions and variable are declared
+                    |         STACK        |   on the stack.
+base pointer ->     | - - - - - - - - - - -|
+                    |           |          |
+                    |           v          |
+                    :                      :
+                    .                      .   The stack grows down into unused space
+                    .         Empty        .   while the heap grows up. 
+                    .                      .
+                    .                      .   (other memory maps do occur here, such 
+                    .                      .    as dynamic libraries, and different memory
+                    :                      :    allocate)
+                    |           ^          |
+                    |           |          |
+ brk point ->       | - - - - - - - - - - -|   Dynamic memory is declared on the heap
+                    |          HEAP        |
+                    |                      |
+                    |----------------------|
+                    |          BSS         |   Uninitialized data (BSS)
+                    |----------------------|   
+                    |          Data        |   Initialized data (DS)
+                    |----------------------|
+                    |          Text        |   Binary code
+Low Addresses ----> '----------------------'
+
+Each contains its own read, write and execute permissions, if a program attempts to access memory in an unauthorized manner, a segmentation error occurs.
+
+### Stack:
+* It located at a higher address and grows and shrinks opposite to the heap segment.
+* The stack contains local variables from functions and related book-keeping data.
+* A stack frame will create in the stack when a function is called.
+* Each function has one stack frame.
+* Stack frames contain the function’s local variables arguments and return value.
+* The stack contains a LIFO(First in last out) structure. Function variables are pushed onto the stack when called and functions variables are popped off the stack when return.
+* SP(stack pointer) register tracks the top of the stack.
+### Heap:
+* It is used to allocate the memory at run time.
+* Heap area managed by the memory management functions like malloc, calloc, free, etc which may internally use the brk and sbrk system calls to adjust its size.
+* The Heap area is shared by all shared libraries and dynamically loaded modules in a process.
+* It grows and shrinks in the opposite direction of the stack.
+### BSS(Uninitialized data segment):
+* It contains all uninitialized global and static variables.
+* All variables in this segment initialized by the zero(0) and pointer with the null pointer.
+* The program loader allocates memory for the BSS section when it loads the program.
+### DS(Initialized data segment):
+* It contains the explicitly initialized global and static variables.
+* The size of this segment is determined by the size of the values in the program’s source code and does not change at run time.
+* It has read-write permission so the value of the variable of this segment can be changed at run time.
+* This segment can be further classified into an initialized read-only area and an initialized read-write area.
+### Text:
+* The text segment contains a binary of the compiled program.
+* The text segment is a read-only segment that prevents a program from being accidentally modified.
+* It is sharable so that only a single copy needs to be in memory for frequently executed programs such as text editors etc.
