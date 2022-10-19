@@ -1,24 +1,28 @@
 #include "main.h"
 /**
  * main - adds positive numbers
- * @argc: argument count
- * @argv: argument list
- *
- * Return: 1 are not digits, success
+ * @argc:adds positive numbers
+ * @argv: qwd
+ * Return: dqw
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int result = 0;
+	int i, j, sum;
 
-	for (argc = 1; argv[argc]; argc++)
+	sum = 0;
+
+	for (i = 1; i < argc ; i++)
 	{
-		if (!atoi(argv[argc]))
+		for (j = 0; argv[i][j] != '\0' ; j++)
 		{
-			printf("Error\n");
-			return (1);
+			if (argv[i][j] < 47 || argv[i][j] > 57)
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		result += atoi(argv[argc]);
+		sum = sum + atoi(argv[i]);
 	}
-	printf("%d\n", result);
-	exit(EXIT_SUCCESS);
+	printf("%d\n", sum);
+	return (0);
 }

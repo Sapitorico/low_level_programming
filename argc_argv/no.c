@@ -1,22 +1,27 @@
 #include "main.h"
 /**
+ * main - adds positive numbers
+ * @argc: argument count
+ * @argv: argument list
+ *
+ * Return: 1 are not digits, success
  */
 int main(int argc, char **argv)
 {
-	int result = 1, num;
-	int i = 1;
-	char *p;
+	int result = 0;
+	int i;
 
-	for (; i < argc; i++)
+	if (argc < 1)
+		return (0);
+	for (i = 1; i < argc; i++)
 	{
-		num = strtol(argv[i], &p, 10);
-		if (p == argv[i])
+		if (!atoi(argv[i]))
 		{
 			printf("Error\n");
-			exit(EXIT_FAILURE);
+			return (1);
 		}
-		result = result * num;
+		result += atoi(argv[i]);
 	}
 	printf("%d\n", result);
-	return (EXIT_SUCCESS);
+	exit(EXIT_SUCCESS);
 }
