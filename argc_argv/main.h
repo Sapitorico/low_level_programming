@@ -3,5 +3,6 @@
 /*libreires*/
 #include <stdlib.h>
 #include <stdio.h>
+#include <ctype.h>
 /*prototypes*/
 #endif
