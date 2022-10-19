@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 /*libraries*/
+#include <math.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
 /*prototypes*/
@@ -28,6 +30,9 @@ void print_square(int size);
 void print_triangle(int size);
 
 /*advanced*/
+
+long max_prime_factors(long n);
+
 void print_number(int n);
 
 #endif /*main.h*/
