@@ -12,4 +12,5 @@ char *_memset(char *s, char b, unsigned int n);
 char *_strdup(char *str);
 char *_strcpy(char *dest, char *src);
 int _strlen(char *s);
+
 #endif
