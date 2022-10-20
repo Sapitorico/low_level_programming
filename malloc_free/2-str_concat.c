@@ -10,8 +10,6 @@ char *str_concat(char *s1, char *s2)
 {
 	char *dest = NULL;
 
-	if (!s1 && !s2)
-		return (dest);
 	dest = malloc(_strlen(s1) + _strlen(s2) + 1);
 	if (!dest)
 		return (dest);
@@ -32,9 +30,7 @@ char *_strcat(char *dest, char *src)
 	int i;
 
 	for (i = 0; i < _strlen(src); i++)
-	{
 		dest[len + i] = src[i];
-	}
 	dest[len + i] = '\0';
 	return (dest);
 }
