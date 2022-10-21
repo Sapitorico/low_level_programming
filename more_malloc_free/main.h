@@ -12,5 +12,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 int _strlen(char *s);
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
-unsigned int _len(char *s);
+char *_strcpy(char *dest, char *src);
 #endif

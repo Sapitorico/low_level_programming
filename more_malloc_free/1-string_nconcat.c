@@ -1,20 +1,25 @@
 #include "main.h"
 /**
+ * str_concat - concatenates two strings
+ * @s1: pointer to the main string
+ * @s2: pointer to the secondary string
+ *
+ * Return: pointer to the concatenated strig, or NULL if empty
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *arr = NULL;
+	char *dest = NULL;
 
 	if (!s1)
 		s1 = "";
 	if (!s2)
 		s2 = "";
-	arr = malloc(_strlen(s1) + n + 1);
-	if (!arr)
-		return (NULL);
-	arr = _strcat(arr, s1);
-	arr = _strncat(arr, s2, n);
-	return (arr);
+	dest = malloc(_strlen(s1) + n + 1);
+	if (!dest)
+		return (dest);
+	dest = _strcpy(dest, s1);
+	dest = _strncat(dest, s2, n);
+	return (dest);
 }
 /**
  * _strncat - concatenates two strings
@@ -35,45 +40,31 @@ char *_strncat(char *dest, char *src, int n)
 	return (dest);
 }
 /**
- * _strcat - concatenates two strings
- * @dest: pointer to the target srtring to be concatenated
- * @src: pointer to the strign to concatenate
+ * *_strcpy -  function that copies the string
+ * @src: pointer to the strign
+ * @dest: string copy destination
  *
- * Return: the concatenated character string
+ * Return: returns copied string
  */
-char *_strcat(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
-	int len = _strlen(dest);
-	int i;
+	char *copy = dest;
 
-	for (i = 0; i < _strlen(src); i++)
-		dest[len + i] = src[i];
-	dest[len + i] = '\0';
+	while ((*copy++ = *src++) != '\0')
+		;
 	return (dest);
 }
 /**
  * _strlen - returns the length of a string
  * @s: pinter to addres os strign
- * Return: string length
+ *
+ * Return: all elements of the stirng
  */
 int _strlen(char *s)
 {
 	int count = 0;
 
-	for (; s[count] != '\0'; count++)
-		;
-	return (count);
-}
-/**
- * _strlen - returns the length of a string
- * @s: pinter to addres os strign
- * Return: string length
- */
-unsigned int _len(char *s)
-{
-	int count = 0;
-
-	for (; s[count] != '\0'; count++)
+	for (; s[count]; count++)
 		;
 	return (count);
 }
