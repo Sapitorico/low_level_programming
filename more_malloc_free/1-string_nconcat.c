@@ -5,6 +5,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *arr = NULL;
 
+	if (!s1)
+		s1 = "";
+	if (!s2)
+		s2 = "";
 	arr = malloc(_strlen(s1) + n + 1);
 	if (!arr)
 		return(arr);
