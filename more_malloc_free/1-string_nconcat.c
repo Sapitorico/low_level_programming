@@ -9,9 +9,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (!s2)
 		s2 = "";
+	if (n >= _len(s2))
+		n = _strlen(s2);
 	arr = malloc(_strlen(s1) + n + 1);
 	if (!arr)
-		return(arr);
+		return (arr);
 	arr = _strcat(arr, s1);
 	arr = _strncat(arr, s2, n);
 	return (arr);
@@ -57,6 +59,19 @@ char *_strcat(char *dest, char *src)
  * Return: string length
  */
 int _strlen(char *s)
+{
+	int count = 0;
+
+	for (; s[count] != '\0'; count++)
+		;
+	return (count);
+}
+/**
+ * _strlen - returns the length of a string
+ * @s: pinter to addres os strign
+ * Return: string length
+ */
+unsigned int _len(char *s)
 {
 	int count = 0;
 
