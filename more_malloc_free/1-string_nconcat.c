@@ -9,11 +9,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (!s2)
 		s2 = "";
-	if (n >= _len(s2))
-		n = _strlen(s2);
 	arr = malloc(_strlen(s1) + n + 1);
 	if (!arr)
-		return (arr);
+		return (NULL);
 	arr = _strcat(arr, s1);
 	arr = _strncat(arr, s2, n);
 	return (arr);
