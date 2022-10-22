@@ -1,5 +1,4 @@
 #include "main.h"
-char *_memset(char *s, char b, unsigned int n);
 /**
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -22,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
  *
  * Return: returns the initial position of the array
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, int b, unsigned int n)
 {
 	unsigned int i;
 
