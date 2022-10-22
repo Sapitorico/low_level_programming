@@ -10,7 +10,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	arrl = malloc(nmemb * size);
 	if (!arrl)
 		return (NULL);
-	_memset(arrl, 0, size);
+	 arrl = _memset(arrl, 0, size);
 	return (arrl);
 }
 /**
