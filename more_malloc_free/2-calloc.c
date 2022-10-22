@@ -3,7 +3,6 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i = 0;
 	char *arrl = NULL;
 
 	if (!nmemb || !size)
@@ -11,8 +10,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	arrl = malloc(nmemb * size);
 	if (!arrl)
 		return (NULL);
-	for (i = 0; i < nmemb * size; i++)
-		arrl[i] = 0;
+	_memset(arrl, 0, size);
 	return (arrl);
 }
 /**
@@ -25,7 +23,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
  */
 char *_memset(char *s, int b, unsigned int n)
 {
-	unsigned int i;
+	unsigned int i = 0;
 
 	for (i = 0; i < (n * b); i++)
 		s[i] = b;
