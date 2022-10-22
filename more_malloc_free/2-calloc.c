@@ -8,7 +8,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (!nmemb || !size)
 		return (arrl);
-	arrl = malloc(nmemb * size);
+	arrl = malloc(nmemb * sizeof(size));
 	if (!arrl)
 		return (NULL);
 	_memset(arrl, 0, size);
