@@ -1,5 +1,4 @@
 #include "main.h"
-int _prime(int n, int i);
 /**
  * is_prime_number - function to identify prime numbers
  * @n: number
@@ -8,9 +7,9 @@ int _prime(int n, int i);
  */
 int is_prime_number(int n)
 {
-	if (n <= 1)
+	if (n <= 1)	/*prime is a natural number greater than 1*/
 		return (0);
-	return (_prime(n, 2));
+	return (_prime(n, 2));	/*2 is the first prime number*/
 }
 /**
  * _prime - identify prime
@@ -23,7 +22,7 @@ int _prime(int n, int i)
 {
 	if (n == i)
 		return (1);
-	if (n % i == 0)
+	if (n % i == 0)	/*if n prime has only two divisors 1 and itself*/
 		return (0);
 	return (_prime(n, i + 1));
 }
