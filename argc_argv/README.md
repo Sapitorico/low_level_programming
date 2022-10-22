@@ -20,8 +20,52 @@ Remember also that when passed to a function, the name of an array becomes the a
 * argv[argc] is a null pointer.
 * argv[0] through to argv[argc-1] are pointers to strings whose meaning will be determined by the program.
 * argv[0] will be a string containing the program's name or a null string if that is not available. Remaining elements of argv represent the arguments supplied to the program. In cases where there is only support for single-case characters, the contents of these strings will be supplied to the program in lower-case.
-#### Arguments to a program
+## Arguments to a program
 <img src="https://publications.gbdirect.co.uk//c_book/figures/10.1.png" width="500"/>
 
 Command line arguments are given after the program name in the command line shell of operating systems. To pass command line arguments, we usually define main() with two arguments: the first argument is the number of command line arguments and the second is a list of command line arguments.
+### example
+```c
+#include <stdio.h> 
+
+int main (int argc, char *argv[]) 
+{ 
+
+ 	return 0; 
+}
+```
+As you can see, main now has arguments. The name of the variable argc stands for "argument count"; argc contains the number of arguments passed to the program. The name of the variable argv stands for "argument vector". A vector is a one-dimensional array, and argv is a one-dimensional array of strings. Each string is one of the arguments that was passed to the program.
+For example, the command line
+
+| Type | Work performed |
+| ------------ | ------------ |
+| argc - integer | contains the number of arguments that have been entered.  |
+| argv - array | array of pointers to characters.  |
+-  The variable argc will be at least 1, since the program name is taken as the first argument, stored with argv[0], which is the first element of the array. Each element of the array points to a command line argument. All command line arguments are strings.
+* gcc -o myprog myprog.c
+
+would result in the following values internal to GCC:
+
+- argc
+	4
+- argv[0]
+	gcc
+- argv[1]
+	-o
+- argv[2]
+	myprog
+- argv[3]
+	myprog.c
+As you can see, the first argument (argv[0]) is the name by which the program was called, in this case gcc. Thus, there will always be at least one argument to a program, and argc will always be at least 1.
+# how to compile with unused variables
+the best way to suppress an "Unused x-variable" warning:
+* not give the variable a name, tell your compiler using a compiler specific nonstandard mechanism:
+See individual answers for __attribute__((unused)), various #pragmas and so on. Optionally, wrap a preprocesor macro around it for portability.
+In GCC and Clang, add -Wno-unused-parameter option at the end of the command line (after all options that switch unused parameter warning on, like -Wall, -Wextra).
+Add a cast to void
+```c
+void foo(int __attribute__((__unused__)) bar) {
+	    ...		    
+}
+```
 
