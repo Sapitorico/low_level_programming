@@ -15,5 +15,5 @@ char *_strncat(char *dest, char *src, int n);
 char *_strcpy(char *dest, char *src);
 
 void *_calloc(unsigned int nmemb, unsigned int size);
-char *_memset(char *s, int b, unsigned int n); 
+char *_memset(char *s, char b, unsigned int n); 
 #endif
