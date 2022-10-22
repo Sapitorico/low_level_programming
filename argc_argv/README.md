@@ -23,3 +23,5 @@ Remember also that when passed to a function, the name of an array becomes the a
 #### Arguments to a program
 <img src="https://publications.gbdirect.co.uk//c_book/figures/10.1.png" width="500"/>
 
+Command line arguments are given after the program name in the command line shell of operating systems. To pass command line arguments, we usually define main() with two arguments: the first argument is the number of command line arguments and the second is a list of command line arguments.
+

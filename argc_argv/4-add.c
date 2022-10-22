@@ -6,31 +6,38 @@
  *
  * Return: 1 are not digits, success
  */
-int main(int argc, char **argv)
+int main(int argc, char **argv)	/*argv is a bidimensional array*/
 {
 	int result = 0;
 	int i, j;
 
-	if (argc == 1)
+	if (argc == 1)	/*If no number is passed to the program, argument other than 0*/
 	{
 		printf("0\n");
 		return (0);
 	}
-	else
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		for (j = 0; argv[i][j]; j++)
 		{
-			for (j = 0; argv[i][j]; j++)
+			if (!_isdigit(argv[i][j]))	/*if the two arguments are not a digit*//*checks if all values are integers*/
 			{
-				if (!isdigit(argv[i][j]))
-				{
-					printf("Error\n");
-					return (1);
-				}
-				result += atoi(argv[i]);
+				printf("Error\n");
+				exit(EXIT_FAILURE);
 			}
+			result += atoi(argv[i]);	/*atoi() - dereference it, convert string to its ASCII number value*/
 		}
 	}
-	printf("%d\n", result);
 	exit(EXIT_SUCCESS);
+}
+/**
+ * _isdigit - checks for a digit (0 through 9)
+ * @c: argument resived
+ * Return: 1 if c is a digit, 0 otherwise
+ */
+int _isdigit(int c)
+{
+	if (c >= 48 && c <= 57)
+		return (1);
+	return (0);
 }

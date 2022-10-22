@@ -6,4 +6,5 @@
 #include <ctype.h>
 #include <errno.h>
 /*prototypes*/
+int _isdigit(int c);
 #endif
