@@ -10,14 +10,14 @@ int main(int argc, char **argv)
 {
 	int number, number1, result;
 
-	if (argc != 3)
+	if (argc != 3)	/*if argc counts more than 2 arguments print error*/
 	{
 		printf("Error\n");
 		exit(EXIT_FAILURE);
 	}
-	number = atoi(argv[1]);
-	number1 = atoi(argv[2]);
+	number = atoi(argv[1]);	/*first argument */
+	number1 = atoi(argv[2]);	/*second argument*/
 	result = number * number1;
-	printf("%d\n", result);
+	printf("%d\n", result);	/*print result*/
 	exit(EXIT_SUCCESS);
 }

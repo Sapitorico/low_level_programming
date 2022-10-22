@@ -9,6 +9,6 @@
 int main(int argc, char **argv)
 {
 	if (argc)	/*if its content exists*/
-		printf("%s\n", *argv);	/*argv is a pointer to its first element*/
+		printf("%s\n", *argv);/*argv is a pointer to its first element*/
 	exit(EXIT_SUCCESS);
 }
