@@ -50,3 +50,8 @@ Dynamic libraries (also called shared libraries) are linked into the program in 
 
 <img src="https://media-exp1.licdn.com/dms/image/C4D12AQFoHsnhT48Ssw/article-inline_image-shrink_1000_1488/0/1620090857000?e=1671062400&v=beta&t=GsQib778YC_IW59NzjvVptB-P3XHR7VczUjKtqZbKps" width="400"/>
 
+# man or help:
+
+* ar
+* ranlib
+* nm
