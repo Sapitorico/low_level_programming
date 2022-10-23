@@ -8,14 +8,15 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *arr = NULL;
+	/*set a pointer to a place with no data, i.e. the pointer exists but is not initialized, it is assigned the reserved word NULL */
+	char *arr = NULL;	/*assigns a base value for the pointer, in this case NULL, it is a good practice to do so, and we can also use this same variable to return to its base value*/
 
-	if (!size)
+	if (!size)	/*check to receive a valid size to allocate*/
 		return (arr);
-	arr = malloc(sizeof(char) * size);
-	if (!arr)
-		return (arr);
-	arr = _memset(arr, c, size);
+	arr = malloc(sizeof(char) * size);	/*the exact space for storing the required data is allocated*/
+	if (!arr)	/*malloc fails and the memory it allocates is not enough and goes into memory that does not belong to it.*/
+		return (arr);	/*malloc() returns a null pointer (NULL) to indicate that there is no memory available, or that some other error has occurred that prevented the memory from being allocated. */
+	arr = _memset(arr, c, size);	/*initialize it with a specific character.*/
 	return (arr);
 }
 /**
