@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 /*libreries*/
+#include <limits.h>
 #include <unistd.h>
 #include <stdio.h>
 /*secon proyect libreries*/
@@ -30,6 +31,8 @@ void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 
 int _len(int *s);
+
+/*advanced*/
 
 int _atoi(char *s);
 

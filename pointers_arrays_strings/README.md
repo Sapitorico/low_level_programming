@@ -1,4 +1,4 @@
-# C - Pointers, arrays and strings
+# C - Pointers, arrays and strings - the abc of c.
 ## Pointers
 Pointers are very useful, some C programming tasks are more easily performed with pointers, such as dynamic memory allocation that cannot be performed without pointers.
 
