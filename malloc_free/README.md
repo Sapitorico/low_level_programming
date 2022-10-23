@@ -118,7 +118,5 @@ When you are using malloc, you have to handle the memory yourself. This means th
 	* Prototype: void free(void *ptr);
 	* where ptr is the address of the memory space previously allocated by and returned by a call to malloc
 # Valgrind
+When writing big and complex programs, it is not always easy to keep track of all allocated and deallocated memory. We can use the program Valgrind in order to ensure we are freeing all allocated memory. It is a programming tool for memory debugging, memory leak detection, and profiling.
 
-When writing big and complex programs, it is not always easy to keep track of all allocated and deallocated memory. We can use the program
-<a href="/rltoken/0yjuhaU3zJ_eBUxiko08WA" title="Valgrind" target="_blank">Valgrind</a>"
-in order to ensure we are freeing all allocated memory. It is a programming tool for memory debugging, memory leak detection, and profiling.
