@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _strdup - pointer to a newly allocated space in memory
+ * _strdup - returns a pointer to a new string which is a duplicate of the string str
  * @str: pointer to the string
  *
- * Return: pointer to a new string or NULL
+ * Return: pointer to a new string duplicate or NULL
  */
 char *_strdup(char *str)
 {
@@ -11,10 +11,11 @@ char *_strdup(char *str)
 
 	if (!str)
 		return (copy);
-	copy = malloc(_strlen(str) + 1);
+	/*it is also valid to use sizeof, since this operator returns the amount of memory required to store the content of the required data. */
+	copy = malloc(_strlen(str) + 1);	/*space required for the number of elements, plus 1 to assign the limiting '\0' character*/
 	if (!copy)
 		return (copy);
-	copy = _strcpy(copy, str);
+	copy = _strcpy(copy, str);	/*makes a copy of the str to the new array that will contain its copy*/
 	return (copy);
 }
 /**
