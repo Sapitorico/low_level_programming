@@ -9,13 +9,8 @@
 int main(int argc, char **argv)	/*argv is a bidimensional array*/
 {
 	int result = 0;
-	int i, j;
+	int i = 0, j = 0;
 
-	if (argc == 1)	/*If no number is passed to the program, argument other than 0*/
-	{
-		printf("0\n");
-		return (0);
-	}
 	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j]; j++)
@@ -25,9 +20,10 @@ int main(int argc, char **argv)	/*argv is a bidimensional array*/
 				printf("Error\n");
 				exit(EXIT_FAILURE);
 			}
-			result += atoi(argv[i]);	/*atoi() - dereference it, convert string to its ASCII number value*/
 		}
+		result += atoi(argv[i]);	/*atoi() - dereference it, convert string to its ASCII number value*/
 	}
+	printf("%d\n", result);
 	exit(EXIT_SUCCESS);
 }
 /**

@@ -68,4 +68,5 @@ void foo(int __attribute__((__unused__)) bar) {
 	    ...		    
 }
 ```
-
+# What is atoi()?
+* atoi() is a library function that converts strings to integers, when the program gets the input from the command line, the string values are transferred in the program, we have to convert them to integers, atoi() is used to return the integer of the string arguments.
