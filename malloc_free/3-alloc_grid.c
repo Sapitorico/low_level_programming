@@ -12,24 +12,23 @@ int **alloc_grid(int width, int height)
 	int i = 0;
 	int j = 0;
 
-	if (width <= 0 || height <= 0)
+	if (width <= 0 || height <= 0)	/*If width or height is 0 or negative, return NULL*/
 		return (arr);
 	arr = malloc(sizeof(int *) * height);
 	if (!arr)
-		return (arr);
+		return (arr);	/*The function should return NULL on failure*/
 	for (; i < height; i++)
 	{
 		arr[i] = malloc(width * sizeof(int));
 		if (!arr[i])
 		{
-			for (--i; i >= 0; i--)
+			for (--i; i >= 0; i--)	/*At the moment that arr[i] has failed it will be NULL, indicating that it is out of memory and the space is not enough, I must perform a free for each malloc performed in each block in the iteration process.*/
 				free(arr[i]);
-			free(arr);
+			free(arr);	/*then free it and return the main malloc, since it is not required in case the second malloc fails.*/
 			return (arr);
 		}
 		for (; j < width; j++)
-			arr[i][j] = 0;
-
+			arr[i][j] = 0;	/*Each element of the grid must be initialized to 0*/
 	}
 	return (arr);
 }
