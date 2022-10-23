@@ -15,8 +15,8 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(EXIT_FAILURE);
 	}
-	number = atoi(argv[1]);	/*first argument */
-	number1 = atoi(argv[2]);	/*second argument*/
+	number = atoi(argv[1]);		/*get values from the first argument */
+	number1 = atoi(argv[2]);	/* get values from the second argument*/
 	result = number * number1;
 	printf("%d\n", result);	/*print result*/
 	exit(EXIT_SUCCESS);
