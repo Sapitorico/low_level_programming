@@ -10,15 +10,15 @@ char *str_concat(char *s1, char *s2)
 {
 	char *dest = NULL;
 
-	if (!s1)
+	if (!s1)	/*if NULL is passed, treat it as an empty string*/
 		s1 = "";
 	if (!s2)
 		s2 = "";
-	dest = malloc(_strlen(s1) + _strlen(s2) + 1);
+	dest = malloc(_strlen(s1) + _strlen(s2) + 1);	/*I need the number of elements that I want to concatenate inside the destination plus the null at the end.*/
 	if (!dest)
 		return (dest);
-	dest = _strcat(dest, s1);
-	dest = _strcat(dest, s2);
+	dest = _strcat(dest, s1);	/*I save the first string in the destination, dest as it does not contain any element it is not concatenated beyond its assigned size, but ideally a _strcpy is the best option.*/
+	dest = _strcat(dest, s2);	/*I concatenate the second data to the data followed after the first saved data */
 	return (dest);
 }
 /**
