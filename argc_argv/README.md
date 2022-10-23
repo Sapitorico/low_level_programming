@@ -1,4 +1,6 @@
 # C - argc, argv
+* C language command line arguments
+Sometimes, we need to give input while executing the program (command) through command line, C language has a great function "Command Line Arguments". , and by using this function we can send our input through command line to the program.
 ## Arguments to main
 provide a useful opportunity to give parameters to programs. Typically, this facility is used to direct the way the program goes about its task. It's particularly common to provide file names to a program through its arguments.
 
@@ -69,4 +71,4 @@ void foo(int __attribute__((__unused__)) bar) {
 }
 ```
 # What is atoi()?
-* atoi() is a library function that converts strings to integers, when the program gets the input from the command line, the string values are transferred in the program, we have to convert them to integers, atoi() is used to return the integer of the string arguments.
+* atoi() is a library function that converts strings to integers, when the program gets the input from the command line, the string values are transferred in the program, we have to convert them to integers, atoi() is used to return the integer of the string arguments, means ASCII to integer.
