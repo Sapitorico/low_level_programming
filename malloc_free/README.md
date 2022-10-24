@@ -40,6 +40,7 @@ int main(void)
 ```
 Note that when using the notation: char s[] = "School", the array s holds a copy of the string "School". So it is possible to modify this copy.
 This is the memory before the call to print_school:
+
 <img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2022/8/40996bf95c7a495a9f26e23dc2b17c0c43e56d2e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20221023%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20221023T201958Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=5b3792c991f223f6415aa95dcdf168f8c0dcbd3885e2038eb68d85cbac1b2cc3" alt="" loading="lazy" style="">
 
 Note that the string "School" is always present in the memory. We will see why later.
