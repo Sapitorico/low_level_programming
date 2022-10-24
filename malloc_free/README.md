@@ -153,7 +153,7 @@ httpshttps://intranet.hbtn.io/rltoken/0yjuhaU3zJ_eBUxiko08WA
 ## About Valgrind
 Valgrind is a GPL'd system for debugging and profiling Linux programs. With Valgrind's tool suite you can automatically detect many memory management and threading bugs, avoiding hours of frustrating bug-hunting, making your programs more stable. You can also perform detailed profiling to help speed up your programs. https://valgrind.org/info/tools.html
 ## The Valgrind Quick Start Guide
-	**1. Introduction**
+	1. **Introduction**
 
 The Valgrind tool suite provides a number of debugging and profiling tools that help you make your programs faster and more correct. The most popular of these tools is called Memcheck. It can detect many memory-related errors that are common in C and C++ programs and that can lead to crashes and unpredictable behaviour.
 The rest of this guide gives the minimum information you need to start detecting memory errors in your program with Memcheck. For full documentation of Memcheck and the other tools, please read the User Manual.
