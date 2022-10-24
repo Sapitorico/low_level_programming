@@ -7,10 +7,10 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	void *tpt = NULL;	/*declares an empty pointer with a base value of NULL, stating that it does not point to any value.*/
+	void *tpt = NULL;
 
 	tpt  = malloc(b);	/*assigns an integer, positive, specific space*/
-	if (!tpt)	/**/
-		perror();
+	if (!tpt)
+		exit(98);
 	return (tpt);
 }
