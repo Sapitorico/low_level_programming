@@ -1,6 +1,11 @@
 #include "main.h"
-int *_memseti(int *s, int b, unsigned int n);
+int *_setrange(int *arr, int m, unsigned int n);
 /**
+ * array_range - creates an array of integers sorted from smallest to largest
+ * @min: minimum value
+ * @max: maximum value
+ *
+ * Return: pointer to the array of integers sorted from smallest to largest
  */
 int *array_range(int min, int max)
 {
@@ -14,14 +19,22 @@ int *array_range(int min, int max)
 	arri = _memseti(arri, min, (max - min + 1));
 	return (arri);
 }
-int *_memseti(int *s, int b, unsigned int n)
+/**
+ * _setrange - set the array from smallest to largest
+ * @arr: pointer to array of integers
+ * @m: minimum value
+ * @n: limit of the matrix
+ *
+ * Return: returns the address to the sorted integer array
+ */
+int *_setrange(int *arr, int m, unsigned int n)
 {
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
 	{
-		s[i] = b;
-		b++;
+		arr[i] = m;
+		m++;
 	}
-	return (s);
+	return (arr);
 }
