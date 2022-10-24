@@ -13,7 +13,7 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (arri);
-	arri = malloc((max - min + 1) * sizeof(int));
+	arri = malloc((max - min + 1) * sizeof(int));	/*memory for storing a corresponding amount of memory values from min (included) to max (included), sorted from min to max*/
 	if (!arri)
 		return (arri);
 	arri = _setrange(arri, min, (max - min + 1));
