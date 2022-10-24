@@ -41,9 +41,15 @@ int main(void)
 Note that when using the notation: char s[] = "School", the array s holds a copy of the string "School". So it is possible to modify this copy.
 This is the memory before the call to print_school:
 
-Note that the string "School" is always present in the memory. We will see why later.
+<img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2022/8/40996bf95c7a495a9f26e23dc2b17c0c43e56d2e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20221023%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221023T201958Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=5b3792c991f223f6415aa95dcdf168f8c0dcbd3885e2038eb68d85cbac1b2cc3" width="500"/>
+<img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2022/8/40996bf95c7a495a9f26e23dc2b17c0c43e56d2e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20221023%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221023T201958Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=5b3792c991f223f6415aa95dcdf168f8c0dcbd3885e2038eb68d85cbac1b2cc3" width="500"/>
 
+Note that the string "School" is always present in the memory. We will see why later.
 This is the memory right before the line str[0] = 's'; is executed:
+<img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2022/8/d8bd956d1f99c8fd608d4f8a2dc8c155303e3a2a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20221023%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221023T201958Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=8f16bf22d49a81a1be3421dac32251ceb9d51e3ec4f246458a47cf629d166789" width="500"/>
+
+<img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2022/8/d8bd956d1f99c8fd608d4f8a2dc8c155303e3a2a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20221023%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221023T201958Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=8f16bf22d49a81a1be3421dac32251ceb9d51e3ec4f246458a47cf629d166789" width="500"/>
+<img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2022/8/d8bd956d1f99c8fd608d4f8a2dc8c155303e3a2a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20221023%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221023T201958Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=8f16bf22d49a81a1be3421dac32251ceb9d51e3ec4f246458a47cf629d166789" width="500"/>
 
 Note the differences:
 
