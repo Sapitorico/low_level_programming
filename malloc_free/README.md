@@ -46,6 +46,11 @@ This is the memory before the call to print_school:
 | Variable  |   |   |   |   |   |   |   |   |   |   |
 |  Value |  ? | ?  | ?  | ?  |  ? | ?  | ?  |  ? | ?  | ?  |
 
+| Address  |  20 |  21 | 22  | 23  | 24  | 25  |  26 | 27  | 28  | 29  |
+| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+| Variable  | "S  | c  | h  |  o | o  | l" |   |   |   |   |
+|  Value |  S | c  | h  | o  |  l | \0  | ?  |  ? | ?  | ?  |
+
 Note that the string "School" is always present in the memory. We will see why later.
 This is the memory right before the line str[0] = 's'; is executed:
 
