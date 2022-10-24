@@ -7,10 +7,10 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	void *tpt = NULL;
+	void *tpt = NULL;	/*declares an empty pointer with a base value of NULL, indicating that it does not point to any content.*/
 
 	tpt  = malloc(b);	/*assigns an integer, positive, specific space*/
 	if (!tpt)
-		exit(98);
+		exit(98);	/*The Unix98 standard requires malloc() to set errno to ENOMEM upon failure*/
 	return (tpt);
 }
