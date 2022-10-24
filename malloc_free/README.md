@@ -49,7 +49,7 @@ This is the memory before the call to print_school:
 | Address  |  20 |  21 | 22  | 23  | 24  | 25  |  26 | 27  | 28  | 29  |
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
 | Variable  | "S  | c  | h  |  o | o  | l" |   |   |   |   |
-|  Value |  S | c  | h  | o  |  l | \0  | ?  |  ? | ?  | ?  |
+|  Value |  S | c  | h  | o  | o | l  | \0  |  ? | ?  | ?  |
 
 Note that the string "School" is always present in the memory. We will see why later.
 This is the memory right before the line str[0] = 's'; is executed:
@@ -57,12 +57,12 @@ This is the memory right before the line str[0] = 's'; is executed:
 | Address  |  20 |  21 | 22  | 23  | 24  | 25  |  26 | 27  | 28  | 29  |
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
 | Variable  |  |  | s  | t | r | l  |   |   |   |   |
-|  Value |  S | c  | h  | o  |  l | \0  | ?  |  ? | ?  | ?  |
+|  Value |  S | c  | h  | o  |  o | l  | \0  |  ? | ?  | ?  |
 
 | Address  |  20 |  21 | 22  | 23  | 24  | 25  |  26 | 27  | 28  | 29  |
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
-| Variable  | "S | h | o | o | l" |  |   |   |   |   |
-|  Value |  S | c  | h  | o  |  l | \0  | ?  |  ? | ?  | ?  |
+| Variable  | "S | c | h | o | o | l" |   |   |   |   |
+|  Value |  S | c  | h  | o  | o | l | \0  |  ? | ?  | ?  |
 
 Note the differences:
 * The variable str is not a pointer, it’s an array. str does not hold the memory address of the string "School", but a copy of it
@@ -77,8 +77,8 @@ And this is the memory state when the program leaves the function print_school:
 
 | Address  |  20 |  21 | 22  | 23  | 24  | 25  |  26 | 27  | 28  | 29  |
 | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
-| Variable  | "S | h | o | o | l" |  |   |   |   |   |
-|  Value |  S | c  | h  | o  |  l | \0  | ?  |  ? | ?  | ?  |
+| Variable  | "S | c | h | o | o | l" |   |   |   |   |
+|  Value |  S | c  | h  | o  | o | l"  | \0  |  ? | ?  | ?  |
 
 Note, again, that the string "School" is still present in the memory.
 
