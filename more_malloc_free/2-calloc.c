@@ -1,5 +1,10 @@
 #include "main.h"
 /**
+ * _calloc - allocates memory for a data type
+ * @nmemb: number of elementsi of a data type
+ * @size: data type size
+ *
+ * Return: empty pointer to the allocated memory block
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
