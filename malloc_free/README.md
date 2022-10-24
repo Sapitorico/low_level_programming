@@ -65,9 +65,8 @@ This is the memory right before the line str[0] = 's'; is executed:
 |  Value |  S | c  | h  | o  |  l | \0  | ?  |  ? | ?  | ?  |
 
 Note the differences:
-
-	* The variable str is not a pointer, it’s an array. str does not hold the memory address of the string "School", but a copy of it
-	* The string “School” is copied into this array
+* The variable str is not a pointer, it’s an array. str does not hold the memory address of the string "School", but a copy of it
+* The string “School” is copied into this array
 
 And this is the memory state when the program leaves the function print_school:
 
