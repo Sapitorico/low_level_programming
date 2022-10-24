@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * str_concat - concatenates two strings
+ * string_nconcat - concatenates two strings
  * @s1: pointer to the main string
  * @s2: pointer to the secondary string
+ * @n: first n bytes of s2
  *
  * Return: pointer to the concatenated strig, or NULL if empty
  */
@@ -10,12 +11,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *dest = NULL;
 
-	if (!s1)
+	if (!s1)	/*if NULL is passed, treat it as an empty string*/
 		s1 = "";
 	if (!s2)
 		s2 = "";
 	dest = malloc(_strlen(s1) + n + 1);
-	if (!dest)
+	if (!dest)	/*If the function fails, it should return NULL*/
 		return (dest);
 	dest = _strcpy(dest, s1);
 	dest = _strncat(dest, s2, n);
@@ -34,7 +35,8 @@ char *_strncat(char *dest, char *src, int n)
 	int i;
 	int len = _strlen(dest);
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	/*If n is greater or equal to the length of s2 then use the entire string s2*/
+	for (i = 0; i < n && src[i]; i++)
 		dest[len + i] = src[i];
 	dest[len + i] = '\0';
 	return (dest);
