@@ -10,12 +10,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *arrl = NULL;
 
-	if (!nmemb || !size)
+	if (!nmemb || !size)	/*If nmemb or size is 0, then _calloc returns NULL*/
 		return (arrl);
 	arrl = malloc(nmemb * size);
-	if (!arrl)
+	if (!arrl)	/*If nmemb or size is 0, then _calloc returns NULL*/
 		return (NULL);
-	arrl = _memset(arrl, 0, (size * nmemb));
+	arrl = _memset(arrl, 0, (size * nmemb)); /*calloc sets the allocated memory to zero*/
 	return (arrl);
 }
 /**
