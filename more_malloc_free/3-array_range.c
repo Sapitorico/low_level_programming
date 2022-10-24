@@ -16,7 +16,7 @@ int *array_range(int min, int max)
 	arri = malloc((max - min + 1) * sizeof(int));
 	if (!arri)
 		return (arri);
-	arri = _memseti(arri, min, (max - min + 1));
+	arri = _setrange(arri, min, (max - min + 1));
 	return (arri);
 }
 /**
