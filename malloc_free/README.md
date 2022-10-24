@@ -129,7 +129,8 @@ int main(void)
 }
 ```
 In the above example we use malloc to create a 3 byte allocated space in memory, and we fill this space with characters. Note the use the operator sizeof. It is very important because as you know, the size of the different types will be different on different machines: we want 3 times the size of a char (which happens to be 3 times 1 byte on our 64-bit machine). Always use sizeof for a better portability.
-### Don’t trust anyone
+
+* Don’t trust anyone
 On error, malloc returns NULL. As for any other C library function, you should always check the malloc return value before using it. If you don’t you will run into segfaults.
 ### Sizeof operator in C
 The sizeof operator is the most common operator in C. It is a compile-time unary operator and is used to calculate the size of its operand. It returns the exact size required to store a data type. It can be applied to any data type, float type, pointer type variables.
@@ -185,14 +186,17 @@ int main(void)
 	return 0;
 }
 ```
+
 Most error messages look like the following, which describes problem 1, the heap block overrun:
-	==19182== Invalid write of size 4
-	==19182==    at 0x804838F: f (example.c:6)
-	==19182==    by 0x80483AB: main (example.c:11)
-	==19182==  Address 0x1BA45050 is 0 bytes after a block of size 40 alloc'd
-	==19182==    at 0x1B8FF5CD: malloc (vg_replace_malloc.c:130)
-	==19182==    by 0x8048385: f (example.c:5)
-	==19182==    by 0x80483AB: main (example.c:11)
+
+    ==19182== Invalid write of size 4
+    ==19182==    at 0x804838F: f (example.c:6)
+    ==19182==    by 0x80483AB: main (example.c:11)
+    ==19182==  Address 0x1BA45050 is 0 bytes after a block of size 40 alloc'd
+    ==19182==    at 0x1B8FF5CD: malloc (vg_replace_malloc.c:130)
+    ==19182==    by 0x8048385: f (example.c:5)
+    ==19182==    by 0x80483AB: main (example.c:11)
+
 Things to notice:
 
 * There is a lot of information in each error message; read it carefully.
@@ -208,10 +212,10 @@ Things to notice:
 * Some error messages have a second component which describes the memory address involved. This one shows that the written memory is just past the end of a block allocated with malloc() on line 5 of example.c.
 It's worth fixing errors in the order they are reported, as later errors can be caused by earlier errors. Failing to do this is a common cause of difficulty with Memcheck.
 Memory leak messages look like this:
-	==19182== 40 bytes in 1 blocks are definitely lost in loss record 1 of 1
-	==19182==    at 0x1B8FF5CD: malloc (vg_replace_malloc.c:130)
-	==19182==    by 0x8048385: f (a.c:5)
-	==19182==    by 0x80483AB: main (a.c:11)
+==19182== 40 bytes in 1 blocks are definitely lost in loss record 1 of 1
+==19182==    at 0x1B8FF5CD: malloc (vg_replace_malloc.c:130)
+==19182==    by 0x8048385: f (a.c:5)
+==19182==    by 0x80483AB: main (a.c:11)
 The stack trace tells you where the leaked memory was allocated. Memcheck cannot tell you why the memory leaked, unfortunately. (Ignore the "vg_replace_malloc.c", that's an implementation detail.)
 
 There are several kinds of leaks; the two most important categories are:
