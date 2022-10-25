@@ -47,4 +47,4 @@ The "free" method in C is used to dynamically deallocate memory. Memory allocate
 Syntax:
 	libre (ptr);
 
-<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Free-function-in-c.png" wisth="500"/>
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Free-function-in-c.png" width="500"/>
