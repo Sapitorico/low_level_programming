@@ -73,8 +73,10 @@ Whenever we access that number, it returns to its original form by applying the 
 Therefore, it now has all 32 bits available for us to use for storage, its range would be 0 to 2^32 - 1.
 
 The **unsigned** is just a codeword that has a specific function attached to it at the hardware level, this data type is where the computer normally stores data in binary form.
-	* The range of an **int** is explicit as a minimum requirement. The "limits.h" refer to the actual values as their corresponding variables for INT_MIN and INT_MAX.
-	* An **unsigned int** has a minimum INT_MIN range inclusive of the maximum actual value defined by the UNIT_MAX component of the header file. you do not need to use one of the sign bits if it is an unsigned value. This implies that it requires a larger variable of positive encodings at the expense of no negatives.	
+
+* The range of an **int** is explicit as a minimum requirement. The "limits.h" refer to the actual values as their corresponding variables for INT_MIN and INT_MAX.
+
+* An **unsigned int** has a minimum INT_MIN range inclusive of the maximum actual value defined by the UNIT_MAX component of the header file. you do not need to use one of the sign bits if it is an unsigned value. This implies that it requires a larger variable of positive encodings at the expense of no negatives.	
 You should use **unsigned int** if you want to store a huge number and you are sure that there will never be a negative value, e.g. the malloc() function.
 # These are the values of integer types
 
