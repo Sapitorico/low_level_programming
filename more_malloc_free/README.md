@@ -62,8 +62,9 @@ Memory space occupied
 1- The memory requirements for an **int** are 4 bytes, which when multiplied by 8 are 32 bits: 4 x 8 = 32 bits.
 
 2- The **unsigned int** also occupies up to 4 bytes of memory space, which adds up to 32 bits.
-	* In the **int** data type, the leftmost bit in the 32 bits is designated as the sign bit, which indicates whether the integer is positive or negative. 1 indicates a negative value while 0 indicates a positive one.
-	* The range of integers that can be stored in an integer variable is -(2^31) to 2^31 -1, which is equal to -2,147,483,468 through 2,147,483,647.
+
+* In the **int** data type, the leftmost bit in the 32 bits is designated as the sign bit, which indicates whether the integer is positive or negative. 1 indicates a negative value while 0 indicates a positive one.
+* The range of integers that can be stored in an integer variable is -(2^31) to 2^31 -1, which is equal to -2,147,483,468 through 2,147,483,647.
 
 When a negative number is entered into the computer, it is represented as the 2 component of that number in binary form. Because the initial bits of the memory will always be set to 1, and the computer would know that it would have encountered a negative number every time it saw the initial bit set to 1.
 
