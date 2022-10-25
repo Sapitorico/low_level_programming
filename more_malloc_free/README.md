@@ -1,6 +1,7 @@
 # C - More malloc, free - Dynamic memory allocation in C using malloc(), calloc(), free()
 Quite complete information on malloc and free: https://github.com/Sapitorico/holbertonschool-low_level_programming/blob/main/malloc_free/README.md
 # recreating memory allocation functions
+
 ## malloc()
 The "malloc" or "memory allocation" method in C is used to dynamically allocate a single large block of memory with the specified size. 
 
@@ -31,7 +32,7 @@ Syntax:
 
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/calloc-function-in-c.png" width="500"/>
 
-##free()
+## free()
 The free function frees memory space that has been allocated by a previous call to malloc (or calloc, or realloc).
 
 *prototype:
