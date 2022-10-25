@@ -49,3 +49,8 @@ Syntax:
 	libre (ptr);
 
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Free-function-in-c.png" width="500"/>
+
+# UNIX98:
+When malloc fails to detect an error (i.e. returns a pointer to NULL), the POSIX98 standard dictates that errno (the value in errno is significant only when the return value of the call indicated an error) must be set.
+
+The UNIX98 standard requires malloc to return failure to set ENOMEM (the available data space is not large enough to store the shared memory segment) in case of failure.
