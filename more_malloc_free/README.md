@@ -65,8 +65,8 @@ Memory space occupied
 
 2- The **unsigned int** also occupies up to 4 bytes of memory space, which adds up to 32 bits.
 
-	* In the **int** data type, the leftmost bit in the 32 bits is designated as the sign bit, which indicates whether the integer is positive or negative. 1 indicates a negative value while 0 indicates a positive one.
-	* The range of integers that can be stored in an integer variable is -(2^31) to 2^31 -1, which is equal to -2,147,483,468 through 2,147,483,647.
+* In the **int** data type, the leftmost bit in the 32 bits is designated as the sign bit, which indicates whether the integer is positive or negative. 1 indicates a negative value while 0 indicates a positive one.
+* The range of integers that can be stored in an integer variable is -(2^31) to 2^31 -1, which is equal to -2,147,483,468 through 2,147,483,647.
 
 When a negative number is entered into the computer, it is represented as the 2 component of that number in binary form. Because the initial bits of the memory will always be set to 1, and the computer would know that it would have encountered a negative number every time it saw the initial bit set to 1.
 
@@ -76,9 +76,9 @@ Therefore, it now has all 32 bits available for us to use for storage, its range
 
 The **unsigned** is just a codeword that has a specific function attached to it at the hardware level, this data type is where the computer normally stores data in binary form.
 
-	* The range of an **int** is explicit as a minimum requirement. The "limits.h" refer to the actual values as their corresponding variables for INT_MIN and INT_MAX.
+* The range of an **int** is explicit as a minimum requirement. The "limits.h" refer to the actual values as their corresponding variables for INT_MIN and INT_MAX.
 
-	* An **unsigned int** has a minimum INT_MIN range inclusive of the maximum actual value defined by the UNIT_MAX component of the header file. you do not need to use one of the sign bits if it is an unsigned value. This implies that it requires a larger variable of positive encodings at the expense of no negatives.	
+* An **unsigned int** has a minimum INT_MIN range inclusive of the maximum actual value defined by the UNIT_MAX component of the header file. you do not need to use one of the sign bits if it is an unsigned value. This implies that it requires a larger variable of positive encodings at the expense of no negatives.	
 You should use **unsigned int** if you want to store a huge number and you are sure that there will never be a negative value, e.g. the malloc() function.
 # These are the values of integer types
 
