@@ -75,3 +75,8 @@ Notice that it's useful to comment which conditional statement a particular #end
 
 On many compilers, the #pragma once directive can be used intead of include guards.
 # Standard Predefined Macros
+The standard predefined macros are specified by the relevant language standards, so they are available with all compilers that implement those standards.
+* __FILE__
+
+This macro expands to the name of the current input file, in the form of a C string constant. This is the path by which the preprocessor opened the file, not the short name specified in ‘#include’ or as the input file name argument. For example, "/usr/local/include/myheader.h" is a possible expansion of this macro
+
