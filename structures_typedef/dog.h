@@ -1,8 +1,11 @@
 #ifndef DOG_H
 #define DOG_H
+/*libreires*/
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+
+/*structures*/
 
 /**
  * struct dog - structure of the damn dog
@@ -17,6 +20,8 @@ typedef struct dog
 	float age;
 	char *owner;
 } dog_t;
+
+/*prototypes*/
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
