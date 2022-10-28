@@ -7,6 +7,7 @@ void print_dog(struct dog *d)
 {
 	if (!d)
 		return;
+	/*If an element of d is NULL, print (nil)*/
 	if (!d->name)
 		d->name = "(nil)";
 	if (!d->owner)
