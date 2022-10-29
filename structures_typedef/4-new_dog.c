@@ -1,4 +1,6 @@
 #include "dog.h"
+#include "strcpy.c"
+#include "strlen.c"
 /**
  * new_dog - creates a new struct dog
  * @name: dog name
@@ -9,29 +11,29 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dog;
+	dog_t *dog = NULL;
 
-	dog =  malloc(sizeof(dog_t));
-	if (dog)
+	dog = malloc(sizeof(dog_t));
+	if (!dog)
 	{
-		dog->name = malloc(sizeof(char) * (strlen(owner) + 1));
-		if (dog->name)
-		{
-			dog->name = strcpy(dog->name, name);
-			dog->owner = malloc(sizeof(char) * (strlen(owner) + 1));
-			if (dog->owner)
-			{
-				dog->owner = strcpy(dog->owner, owner);
-				dog->age = age;
-				return (dog);
-			}
-			free(dog->name);
-			free(dog);
-			return (NULL);
-		}
 		free(dog);
-		return (NULL);
+		return (dog);
 	}
-	free(dog);
-	return (NULL);
+	dog->name = malloc(sizeof(char) * _strlen(name) + 1);
+	if (!dog->name)
+	{
+		free(dog);
+		return (dog);
+	}
+	dog->owner = malloc(sizeof(char) * _strlen(owner) + 1);
+	if (!dog->owner)
+	{
+		free(dog->name);
+		free(dog);
+		return (dog);
+	}
+	_strcpy(dog->name, name);
+	dog->age = age;
+	_strcpy(dog->owner, owner);
+	return (dog);
 }
