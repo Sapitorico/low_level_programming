@@ -7,5 +7,5 @@
 void print_name(char *name, void (*f)(char *))
 {
 	if (f)
-		(f)(name);
+		(f)(name);	/*I invoke the function and pass the parameters*/
 }
