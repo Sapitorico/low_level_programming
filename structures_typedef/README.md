@@ -46,6 +46,31 @@ typedef struct tag_name {
 ### typedef
 typedef is a reserved keyword, It is used to create an additional name (alias) for another data type, but does not create a new type, except in the obscure case of a qualified typedef of an array type where the typedef qualifiers are transferred to the array element type.
 In the  POSIX specifications, the identifier for the typedef definition is often suffixed with _t, such as in size_t and time_t.
+* the alias can be used as a new data type
+
+Although typedef is thought of as being a storage class, it isn't really. It allows you to introduce synonyms for types which could have been declared some other way. The new name becomes equivalent to the type that you wanted, as this example shows.
+```c
+typedef int aaa, bbb, ccc;
+typedef int ar[15], arr[9][6];
+typedef char c, *cp, carr[100];
+
+/* now declare some objects */
+
+/* all ints */
+aaa     int1;
+bbb     int2;
+ccc     int3;
+
+ar      yyy;    /* array of 15 ints */
+arr     xxx;    /* 9*6 array of int */
+
+c       ch;     /* a char */
+cp      pnt;    /* pointer to char */
+carr    chry;   /* array of 100 char */
+```
+The general rule with the use of typedef is to write out a declaration as if you were declaring variables of the types that you want. Where a declaration would have introduced names with particular types, prefixing the whole thing with typedef means that, instead of getting variables declared, you declare new type names instead. Those new type names can then be used as the prefix to the declaration of variables of the new type.
+
+The use of typedef isn't a particularly common sight in most programs; it's typically found only in header files and is rarely the province of day-to-day coding.
 ## Initialization
 There are three ways to initialize a structure
 * Declare the struct with integer members
