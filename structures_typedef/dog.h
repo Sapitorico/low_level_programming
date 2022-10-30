@@ -1,6 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 /*libreires*/
+#include <sapito.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -21,9 +22,6 @@ typedef struct dog
 	char *owner;
 } dog_t;
 
-char *_strcpy(char *dest, char *src);
-
-int _strlen(char *s);
 /*prototypes*/
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
