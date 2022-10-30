@@ -1,7 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
 /*libreires*/
-#include <sapito.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
