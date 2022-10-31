@@ -9,8 +9,8 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	unsigned int i = 0;
 
-	if (action)
-		if (array)
+	if (action)	/*if it is a pointer to a valid function*/
+		if (array)	/*if array is not null*/
 			for (; i < size; i++)
-				(action)(array[i]);
+				(action)(array[i]);	/*sends parameter by parameter to the function*/
 }
