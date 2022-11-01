@@ -12,11 +12,11 @@
  */
 typedef struct op
 {
-    char *op;
-    int (*f)(int a, int b);
+	char *op;
+	int (*f)(int a, int b);
 } op_t;
 
-/*prototype of the function that obtains the function according to the operator*/
+/*prototype function that obtains the function according to the operator*/
 int (*get_op_func(char *s))(int, int);
 
 /*prototypes of the functions that perform the operations*/
