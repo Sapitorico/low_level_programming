@@ -1,5 +1,10 @@
 #include "3-calc.h"
 /**
+ * main - main operating function
+ * @argc: argument counter
+ * @argv: list of arguments
+ *
+ * Return: result of the operation
  */
 int main(int argc, char **argv)
 {
@@ -11,7 +16,7 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 	f = get_op_func(argv[2]);
-	if (!argv[1] || !argv[3])
+	if (*argv[3] == '0')
 	{
 		printf("Error\n");
 		exit(100);
