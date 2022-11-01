@@ -60,7 +60,7 @@ int print_str(va_list args)
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int i = 0, j;
+	int i = 0, j = 0;
 	char *sep1 = "";
 	char *sep2 = ", ";
 	format_t form[] = {
@@ -72,10 +72,10 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(args, format);
-	for (; format && format[i]; i++)
+	while (format && format[i])
 	{
 		j = 0;
-		for (; form[j].c ; j++)
+		while (form[j].c)
 		{
 			if (format[i] == form[j].c)
 			{
@@ -83,7 +83,9 @@ void print_all(const char * const format, ...)
 				form[j].f(args);
 				sep1 = sep2;
 			}
+			j++;
 		}
+		i++;
 	}
 	printf("\n");
 	va_end(args);
