@@ -28,11 +28,10 @@ int main()
 }
 ```
 Why do we need an extra bracket around function pointers like fun_ptr in above example?
-If we remove bracket, then the expression “void (*fun_ptr)(int)” becomes “void *fun_ptr(int)” which is declaration of a function that returns void pointer. See following post for details.
+If we remove bracket, then the expression “void (*fun_ptr)(int)” becomes “void *fun_ptr(int)” which is declaration of a function that returns void pointer.
 
 ## some interesting facts
 * They are used to store function addresses
-* Unlike normal pointers, a function pointer points to code, not data. Typically a function pointer stores the start of executable code.
 * Unlike normal pointers, a function pointer points to code, not data. Typically a function pointer stores the start of executable code.
 * A function’s name can also be used to get functions’ address.
 * Like normal pointers, we can have an array of function pointers.
