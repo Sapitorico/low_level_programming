@@ -54,3 +54,18 @@ int op_mod(int a, int b)
 {
 	return (a % b);
 }
+/**
+ * op_powr - power of a number
+ * @a: base
+ * @b: exponent
+ *
+ * Return: power
+ */
+int op_power(int a, int b)
+{
+	int result = 1;
+
+	for (; b > 0; b--)
+		result *= a;
+	return (result);
+}

@@ -90,3 +90,5 @@ The memory that is allocated to a program can generally be divided into four sec
 * code (text)
 a program is basically a set of instructions, it gets part of the memory only when it starts executing, when it finishes this memory is recovered, what happens is that a certain memory is allocated and that is the application memory.
 code (text) is the machine code, the instructions copied from the executable file, the instructions are not executed directly from the secondary storage, first they are copied to the main memory and then they can only be executed during the execution of the program. We need memory to store instructions to be executed, but also to store a large amount of data that we will work with in a program, these other segments are mainly about storing and managing data.
+# Resources
+* <a href="https://boredzo.org/pointers/" target="blank">Everything you need to know about pointers in C</a>
