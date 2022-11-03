@@ -1,6 +1,6 @@
 #include "dog.h"
-#include "strcpy.c"
-#include "strlen.c"
+#include <strlen.c>
+#include <strcpy.c>
 /**
  * new_dog - creates a new struct dog
  * @name: dog name
