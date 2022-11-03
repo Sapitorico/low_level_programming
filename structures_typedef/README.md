@@ -124,4 +124,4 @@ struct point *p = &my_point;  /* p is a pointer to my_point */
 p->x = 8;                     /* equivalent method to set the first member of the struct */
 ```
 # Resources
-* <a href="/rltoken/qxIHARCFIPU4IGX12WVa0g" title="The Lost Art of C Structure Packing" target="blank">The Lost Art of C Structure Packing</a>
+* <a href="http://www.catb.org/esr/structure-packing/" title="The Lost Art of C Structure Packing" target="blank">The Lost Art of C Structure Packing</a>
