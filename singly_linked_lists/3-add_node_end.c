@@ -16,7 +16,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		*head = add_node(head, str);
 		return (*head);
 	}
-	for (;node->next;)
+	for (; node->next;)
 		node = node->next;
 	end = add_node_end(&(node->next), str);
 	return (end);
