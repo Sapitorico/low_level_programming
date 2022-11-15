@@ -2,6 +2,11 @@
 #include "strcpy.c"
 #include "strlen.c"
 /**
+ * add_node - adds a new node
+ * @head: pointer to the first node
+ * @str: pointer to the name string
+ *
+ * Return: the address of the new element, or NULL if it failed
  */
 list_t *add_node(list_t **head, const char *str)
 {
