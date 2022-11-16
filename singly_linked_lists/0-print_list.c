@@ -1,4 +1,5 @@
 #include "lists.h"
+#include "_printf.c"
 /**
  * print_list - function that prints all the elements
  * @h: pointer to the structure
@@ -13,12 +14,12 @@ size_t print_list(const list_t *h)
 	{
 		if (!h->str)
 		{
-			printf("[0] (nil)\n");
+			_printf("[0] (nil)\n");
 			h = h->next;
 		}
 		else
 		{
-			printf("[%d] %s\n", h->len, h->str);
+			_printf("[%d] %s\n", h->len, h->str);
 			h = h->next;
 		}
 	}

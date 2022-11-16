@@ -5,7 +5,7 @@
  *
  * Return: all elements of the stirng
  */
-int _strlen(const char *s)
+int __strlen(const char *s)
 {
 	int count = 0;
 
