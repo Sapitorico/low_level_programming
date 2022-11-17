@@ -191,3 +191,10 @@ head pointer
 * When it has been reached, we make the last element of the list point to the new node just created.
 
 </details>
+<footer>
+
+<h4>Resources:</h4>
+
+<a href="https://github.com/Sapitorico/holbertonschool-low_level_programming/tree/main/structures_typedef" target="blank">Structures, typedef</a>
+
+</footer>
