@@ -83,15 +83,16 @@ end STRUCTURE
 ```
 <h4>Index</h4>
 
-1. [ create a new node ](#create a new node)
+1. [ create a new node ](#c)
 	
-2. [ scroll through a list ](#scroll through a list)
+2. [ scroll through a list ](#s)
 	
-3. [ inserts items in the list ](#inserts items in the list)
+3. [ inserts items in the list ](#f)
 	
-4. [ insert elements at the end ](#insert elements at the end)
+4. [ insert elements at the end ](#e)
 
-<h3 name="create a new node">create a new node</h3>
+<a name="c"></a>
+<h3>create a new node</h3>
 
 ```
 FUNCTION create_node( l: book): node ---> function that returns a new node from a book.
@@ -105,6 +106,7 @@ FUNCTION create_node( l: book): node ---> function that returns a new node from 
 	RETURN new_node
 ```
 
+<a name="s"></a>
 <h3 name="scroll through a list">scroll through a list</h3>
 
 * To go through a list we must access each of the elements of a list starting with the first and ending with the last one. 
@@ -122,7 +124,8 @@ FUNCTION traverse_list(l: list)
 		pointer = pointer.next
 ```
 
-<h3 name="inserts items in the list">inserts items in the list</h3>
+<a name="f"></a>
+<h3>inserts items in the list</h3>
 
 depends: 
 
@@ -180,6 +183,7 @@ new node
 head pointer
 ```
 
+<a name="e"></a>
 <h3 name="insert elements at the end">insert elements at the end</h3>
 
 * We have to traverse the list until we reach the element that I have no elements, the last node, which has a pointer next to null.
