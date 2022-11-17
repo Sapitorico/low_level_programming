@@ -92,6 +92,7 @@ end STRUCTURE
 4. [ insert elements at the end ](#insert elements at the end)
 
 <h3 name="create a new node">create a new node</h3>
+
 ```
 FUNCTION create_node( l: book): node ---> function that returns a new node from a book.
 	
@@ -103,6 +104,7 @@ FUNCTION create_node( l: book): node ---> function that returns a new node from 
 	
 	RETURN new_node
 ```
+
 <h3 name="scroll through a list">scroll through a list</h3>
 
 * To go through a list we must access each of the elements of a list starting with the first and ending with the last one. 
