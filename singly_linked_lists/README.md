@@ -1,4 +1,5 @@
 <div><h1>C - Singly linked lists</h1>
+
 <p>It is a data structure, which links each node to the next. It can be used in the following case.</p>
 
 * When you need a constant time for insertion and deletion.
@@ -13,6 +14,7 @@ Allows to represent a group of elements represented as a sequence.
 <div>
 
 ---
+
 
 <details>
 <summary><h2>characteristics </h2></summary>
@@ -30,6 +32,7 @@ main node, called head "the first element of the list".
 Each node has a pointer to the next element, to access a specific one we must go through the previous ones.
 
 ```
+
 <h3>advantages compared to an array</h3>
 
 * Nodes do not have to be stored all together in memory, what matters is that they are pointing to the next node in memory.
@@ -47,9 +50,12 @@ Each node has a pointer to the next element, to access a specific one we must go
 
 ---
 
+
 <details>
 <summary><h2>Functioning</h2></summary>
+
 <h3>Example</h3>
+
 ```
 STRUCTURE book
 	name: string[50]
@@ -113,6 +119,7 @@ FUNCTION traverse_list(l: list)
 		process element(pointer.element)
 		pointer = pointer.next
 ```
+
 <h3 name="inserts items in the list">inserts items in the list</h3>
 
 depends: 
@@ -170,6 +177,7 @@ new node
   v
 head pointer
 ```
+
 <h3 name="insert elements at the end">insert elements at the end</h3>
 
 * We have to traverse the list until we reach the element that I have no elements, the last node, which has a pointer next to null.
