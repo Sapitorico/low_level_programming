@@ -1,4 +1,5 @@
 #include "lists.h"
+#include "2-add_nodeint.c"
 /**
  * add_nodeint_end - adds a new node at the end
  * @head: pointer to first node
