@@ -9,7 +9,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	if (!head)
 		return (-1);
-	if (!index)
+	if (index == 0)
 		return (_pop_listint(head));
 	node = _get_nodeint_at_index(*head, index);
 	if (!node)
