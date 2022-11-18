@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * pop_listint - deletes the head node
+ * _pop_listint - deletes the head node
  * @head: pointer to the first node
  *
  * Return: head node’s data (n)

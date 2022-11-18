@@ -2,6 +2,11 @@
 #include "pop_listint.c"
 #include "get_nodeint.c"
 /**
+ * delete_nodeint_at_index - deletes the node at index index of a listint_t
+ * @head: pointer to first node
+ * @index: index
+ *
+ * Return: 1 if it succeeded, -1 if it failed
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
@@ -17,6 +22,5 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	prev = _get_nodeint_at_index(*head, index - 1);
 	if (!prev)
 		return (-1);
-	_pop_listint(&(prev->next));
-	return (1);
+	return (_pop_listint(&(prev->next)));
 }
