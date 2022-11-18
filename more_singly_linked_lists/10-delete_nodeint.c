@@ -5,7 +5,7 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *prev = NULL, *node = NULL;
+	listint_t *prev = NULL, *node = *head;
 	int n = 0;
 
 	if (!head)
@@ -16,6 +16,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	if (!node)
 		return (-1);
 	prev = get_nodeint_at_index(*head, index - 1);
+	if (!prev)
+		return (-1);
 	n = pop_listint(&(prev->next));
 	return (n);
 }
