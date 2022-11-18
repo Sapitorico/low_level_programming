@@ -7,13 +7,13 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	listint_t *prev = NULL, *node = *head;
 
-	if (!head || *head)
+	if (!head)
 		return (-1);
 	if (!index)
 		return (pop_listint(head));
 	node = get_nodeint_at_index(*head, index);
 	if (!node)
-		return (-1);
+		return (0);
 	prev = get_nodeint_at_index(*head, index - 1);
 	prev->next = node->next;
 	free(node);
