@@ -1,6 +1,6 @@
 #include "lists.h"
-#include "6-pop_listint.c"
-#include "7-get_nodeint.c"
+#include "pop_listint.c"
+#include "get_nodeint.c"
 /**
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
@@ -11,13 +11,13 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	if (!head)
 		return (-1);
 	if (!index)
-		return (pop_listint(head));
-	node = get_nodeint_at_index(*head, index);
+		return (_pop_listint(head));
+	node = _get_nodeint_at_index(*head, index);
 	if (!node)
 		return (-1);
-	prev = get_nodeint_at_index(*head, index - 1);
+	prev = _get_nodeint_at_index(*head, index - 1);
 	if (!prev)
 		return (-1);
-	n = pop_listint(&(prev->next));
+	n = _pop_listint(&(prev->next));
 	return (n);
 }
