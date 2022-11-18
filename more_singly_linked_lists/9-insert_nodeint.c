@@ -4,7 +4,7 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *nth = NULL, *node = NULL;
+	listint_t *nth = NULL, *node = *head;
 
 	if (!head)
 		return (NULL);
