@@ -19,11 +19,13 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (NULL);
 	node->next->next = nth;
 	return (node->next);**/
-	nth = malloc(sizeof(listint_t));
+	/**nth = malloc(sizeof(listint_t));
 	if (!nth)
 		return (NULL);
 	nth->n = n;
 	nth->next = node->next;
 	node->next = nth;
+	return (new);**/
+	nth = add_nodeint(&(node->next), n);
 	return (nth);
 }
