@@ -21,6 +21,14 @@
 <summary><h2>characteristics </h2></summary>
 
 <img width="3952" alt="linked list" src="https://user-images.githubusercontent.com/105575956/202875683-fa901ca0-1417-4cb6-8954-dcd829aac575.png">
+	
+<h3>Self-referenced classes</h3>.
+
+A self-referenced class is very common to store data dynamically and consume it as we need it in another process, a self-referenced class contains a class member that references an object of the same type. The union of the referenced classes creates a list of nodes that we can traverse by successively accessing from the root node to the member of the node that points to the next one and so on.
+
+The example below is how a two-dimensional array is organized in memory, actually contiguous memory areas are reserved as in a one-dimensional array.
+	
+<img width="400" alt="array" src="https://beginnersbook.com/wp-content/uploads/2014/01/Pointer-to-array.png">
 
 
 <h3>advantages compared to an array</h3>
