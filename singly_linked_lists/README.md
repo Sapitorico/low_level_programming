@@ -20,19 +20,8 @@
 <details>
 <summary><h2>characteristics </h2></summary>
 
-```
-		tail
-	______________________
- --- 	 ---     ---     ---     ---
-|   |---|   |---|   |---|   |---|   |---> end node with a NULL pointer
- ---     ---     ---     ---     ---
-  |
-  v
-main node, called head "the first element of the list".
+<img width="3952" alt="linked list" src="https://user-images.githubusercontent.com/105575956/202875683-fa901ca0-1417-4cb6-8954-dcd829aac575.png">
 
-Each node has a pointer to the next element, to access a specific one we must go through the previous ones.
-
-```
 
 <h3>advantages compared to an array</h3>
 
