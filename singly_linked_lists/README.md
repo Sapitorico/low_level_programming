@@ -32,12 +32,15 @@ The example below is how a two-dimensional array is organized in memory, actuall
 
 
 <h3>advantages compared to an array</h3>
+	
+Compared to a static array (the elements are arranged contiguously in memory and their size is reserved in the variable declaration) with a given number of elements has an important advantage, a list based on self-linked nodes can modify its size dynamically at runtime (although it also has a computational cost that can affect the performance of our program to handle large memory structures that reserve and free memory as needed).
 
-* Nodes do not have to be stored all together in memory, what matters is that they are pointing to the next node in memory.
+* Nodes do not have to be stored all together in memory, what matters is that they point to the next node in memory.
 
-* They can have variable length, we can add or remove them.
+* They can have a variable length, we can add or remove elements.
 
-* We can add and remove elements at run time. 
+* We can add and remove elements at run time.
+
 <h3>disadvantages</h3>
 
 * They have no notion of index, because what we cannot do is to randomly access a node.
