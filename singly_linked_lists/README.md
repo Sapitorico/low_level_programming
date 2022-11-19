@@ -1,14 +1,34 @@
 <div><h1>C - Singly linked lists</h1>
 
-<p>It is a data structure, which links each node to the next. It can be used in the following case.</p>
+<p>It is a data structure that links a linear collection or a sequence of nodes represented with self-referenced classes. The access to the list is made from the first node (root or head) and it is traversed by accessing the member that points to the next node and so on until the end (the member of the last node that points to the next one is defined as null to avoid errors). They are useful in the following cases:</p>
 
-* When you need a constant time for insertion and deletion.
+* When a constant insertion and deletion time is needed.
 
-* When the data grows dynamically
+* When data grows dynamically
 
-* Do not access random elements of the linked list.
+* Not accessing random elements of the linked list.
 
-* Insert the element at any position
+* Insert the element in any position
+
+* Allows to represent a group of elements represented as a sequence.
+
+<p>Normally lists have the common operations to work with their nodes, let's define methods for:</p>
+
+* Construct an empty list and give it a name.
+
+* Insert a node in the header.
+
+* Insert a node at the end.
+
+* Remove the first node from the list.
+
+* Remove a node from the end of the list.
+
+* Check if a list is empty.
+
+* Print the contents on the screen.
+
+* Get the number of elements or nodes in the list.
 
 Allows to represent a group of elements represented as a sequence. 
 <div>
