@@ -12,24 +12,6 @@
 
 * Allows to represent a group of elements represented as a sequence.
 
-<p>Normally lists have the common operations to work with their nodes, let's define methods for:</p>
-
-* Construct an empty list and give it a name.
-
-* Insert a node in the header.
-
-* Insert a node at the end.
-
-* Remove the first node from the list.
-
-* Remove a node from the end of the list.
-
-* Check if a list is empty.
-
-* Print the contents on the screen.
-
-* Get the number of elements or nodes in the list.
-
 Allows to represent a group of elements represented as a sequence. 
 <div>
 
@@ -73,6 +55,25 @@ Each node has a pointer to the next element, to access a specific one we must go
 
 <details>
 <summary><h2>Functioning</h2></summary>
+
+<p>Normally lists have the common operations to work with their nodes, let's define methods for:</p>
+
+* Construct an empty list and give it a name.
+
+* Insert a node in the header.
+
+* Insert a node at the end.
+
+* Remove the first node from the list.
+
+* Remove a node from the end of the list.
+
+* Check if a list is empty.
+
+* Print the contents on the screen.
+
+* Get the number of elements or nodes in the list.
+
 
 <h3>Example</h3>
 
