@@ -70,6 +70,7 @@ To add new nodes during the execution of our program we will make use of the dyn
 ```c
 Node newItem = new Node(10);
 ```
+Based on this architecture we can create linked lists, queues or trees. Each type of structure has different purposes and can be applied according to the problem to be solved.
 
 </details>
 
