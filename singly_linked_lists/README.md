@@ -12,7 +12,6 @@
 
 * Allows to represent a group of elements represented as a sequence.
 
-Allows to represent a group of elements represented as a sequence. 
 <div>
 
 ---
@@ -186,7 +185,7 @@ new node
 new node
   ^
   |
- ---     ---     ---     ---
+ ---     ---     ---     ---     ---
 |   |---|   |---|   |---|   |---|   |
  ---     ---     ---     ---     ---
           |
