@@ -45,7 +45,31 @@ Compared to a static array (the elements are arranged contiguously in memory and
 
 * They have no notion of index, because what we cannot do is to randomly access a node.
 
-* They need more space in memory because they have to store a pointer. 
+* They need more space in memory because they have to store a pointer.
+	
+```c
+class Node
+{
+    private int data;
+    private Node nextNode;
+    
+    public Node(int data)
+    {
+        this.data = data;
+    }
+    
+    public int data { get { return data; } set { data = value; } }
+    public Node NextNode { get { return nextNode; } set { nextNode = value } }
+}
+```
+
+* The example above is a very basic example of a self-referenced class, of course the nodes can contain all the data we need of any type.
+	
+To add new nodes during the execution of our program we will make use of the dynamic memory reservation with the operator new, this operator receives as operand the type of object that will be assigned dynamically and returns a reference to an object of this type.
+
+```c
+Node newItem = new Node(10);
+```
 
 </details>
 
