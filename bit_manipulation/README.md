@@ -41,7 +41,7 @@ Example:}
   ---
  
   <h3 name="AND">AND (&)</h3>
-  This operator is a multiplication operator
+  A binary operator that operates on two bit patterns of equal length. If both bits in the compared position of the bit patterns are 1, the bit in the resulting bit pattern is 1, otherwise 0.
 example:
 
 ```
@@ -54,11 +54,15 @@ a = b & c -> where in binary: b = 10101010
 10001000
 ```
   
+  ```
+  A = 5 = (101)2 , B = 3 = (011)2 A & B = (101)2 & (011)2= (001)2 = 1
+  ```
+  
   ---
   
   
   <h3 name="OR">OR (|)</h3>
-  This operator is an addition operator, where any of the bits in the same position is '1', the result will be '1'.
+  Also a binary operator that operates on two bit patterns of equal length, similar to bitwise AND. If both bits in the compared position of the bit patterns are 0, the bit of the resulting bit pattern is 0, otherwise 1.
 Example:
 
 ```
@@ -70,10 +74,16 @@ a = b | c -> b = 10101010
 11101110
 ```
   
+  ```
+  A = 5 = (101)2 , B = 3 = (011)2
+  A | B = (101)2 | (011)2 = (111)2 = 7
+  ```
+  
   ----
   
   <h3 name="XOR">XOR (^)</h3>
-  This operator is of an or-exclusivity, where the difference of states in bits of equal position will result in '1', and equality of state will result in '0', it can be understood as ( one or the other, but not both ).
+  It also takes two bit patterns of equal length, it is of type or-exclusive. If both bits in the compared position of the bit patterns are 0 or 1, the bit in the resulting bit pattern is 0, otherwise 1, it can be understood as ( one or the other, but not both ).
+
 example:
 
 ```
@@ -85,10 +95,15 @@ a = b ^ c -> b = 10101010
 01100110
 ```
   
+  ```
+  A = 5 = (101)2 , B = 3 = (011)2
+  A ^ B = (101)2 ^ (011)2 = (110)2 = 6
+  ```
+  
   ----
   
   <h3 name="NOT">NOT (~)</h3>
-  This operation only applies to one element, but inverts the bit values of the element involved.
+  It is a unary operator that inverts the bits of the number, this operation only applies to one element, but it inverts the bit values of the element in question.
 example:
 
 ```
@@ -97,6 +112,12 @@ a = ~b -> b = 10101010
 ~10101010
  --------
  01010101
+```
+  NOT is nothing more than the complement of a number. Let's take an example.
+
+```
+N = 5 = (101)2
+~N = ~5 = ~(101)2 = (010)2 = 2
 ```
 </details>
 
@@ -109,10 +130,10 @@ a = ~b -> b = 10101010
   
   ----
   
-  <h3>right shift (>>)</h3>
+  <h3>Right shift ( >> )</h3>
   
- It shifts the bits from left to right (from the most significant bit to the least significant bit), a defined number of times, the least significant bit is lost at each shift, while the most significant bit is filled with a '0'.
-
+The right shift operator is a binary operator that shifts a certain number of bits, in the given bit pattern, to the right and adds a 1 at the end. Shifting to the right is equivalent to dividing the bit pattern with 2^k ( if we are shifting k bits ).
+  
 Example:
 
 ```
@@ -123,13 +144,20 @@ a = b >> 3 -> b = 10101010
 00010101
 ```
   
+  ```
+  4 >> 1 = 2
+  6 >> 1 = 3
+  5 >> 1 = 2
+  16 >> 4 = 1
+  ```
+  
 This operation can be seen as each displacement is divided by 2, so that in our example, we divide 3 times by 2, and in total we divide by 8.
   
   ---
   
-  <h3>right shift</h3>
+  <h3>Left shift ( << )</h3>
 
-  It is an operator similar to the previous one, here at each shift, the most significant bit is lost and the least significant bit is filled with '0'.
+ The left shift operator is a binary operator that shifts a given number of bits, in the given bit pattern, to the left and adds a 0 to the end. Shifting left is equivalent to multiplying the bit pattern by 2^k ( if we are shifting k bits ).
 
 example:
 
@@ -140,6 +168,14 @@ a = b << 3 -> with the previous result.
 -------
 10101000
 ```
+  
+  ```
+  1 << 1 = 2 = 21
+  1 << 2 = 4 = 22 1 << 3 = 8 = 23
+  1 << 4 = 16 = 24
+  …
+  1 << n = 2n
+  ```
   
 It can be understood as a multiplication by 2, for each displacement.
   </details>
