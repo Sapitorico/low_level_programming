@@ -49,6 +49,7 @@ a = b | c -> b = 10101010
 --------
 11101110
 ```
+  
   <h3 name="XOR">XOR (^)</h3>
   This operator is of an or-exclusivity, where the difference of states in bits of equal position will result in '1', and equality of state will result in '0', it can be understood as ( one or the other, but not both ).
 example:
@@ -61,6 +62,7 @@ a = b ^ c -> b = 10101010
 --------
 01100110
 ```
+  
   <h3 name="NOT">NOT (~)</h3>
   This operation only applies to one element, but inverts the bit values of the element involved.
 example:
@@ -92,6 +94,7 @@ a = b >> 3 -> b = 10101010
 --------
 00010101
 ```
+  
 This operation can be seen as each displacement is divided by 2, so that in our example, we divide 3 times by 2, and in total we divide by 8.
     
     <h3>right shift</h3>
@@ -106,6 +109,7 @@ a = b << 3 -> with the previous result.
 -------
 10101000
 ```
+  
 It can be understood as a multiplication by 2, for each displacement.
   </summary>
   </details>
