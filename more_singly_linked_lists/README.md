@@ -1,8 +1,3 @@
-# C - Hello, World
-### man or help:
-
-* gcc
-* printf (3)
-* puts
-* putchar
-
+<div>
+<h1>C - More singly linked lists</h1>
+</div>
