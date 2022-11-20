@@ -28,6 +28,8 @@ Example:}
     <h2>Bitwise Operators</h2>
   </summary>
   
+  There are different bitwise operations used in the bit manipulation. These bit operations operate on the individual bits of the bit patterns. Bit operations are fast and can be used in optimizing time complexity. Some common bit operators are:
+  
   * [ & - operator AND ](#AND)
   
   * [ | - operator OR ](#OR)
