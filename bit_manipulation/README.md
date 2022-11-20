@@ -79,6 +79,7 @@ a = ~b -> b = 10101010
 <details>
   <summary>
     <h2>shift operators</h2>
+  </summary>
     <h3>right shift (>>)</h3>
     It shifts the bits from left to right (from the most significant bit to the least significant bit), a defined number of times, the least significant bit is lost at each shift, while the most significant bit is filled with a '0'.
 
