@@ -82,7 +82,9 @@ a = ~b -> b = 10101010
   <summary>
     <h2>shift operators</h2>
   </summary>
+  
     <h3>right shift (>>)</h3>
+  
     It shifts the bits from left to right (from the most significant bit to the least significant bit), a defined number of times, the least significant bit is lost at each shift, while the most significant bit is filled with a '0'.
 
 Example:
@@ -97,8 +99,9 @@ a = b >> 3 -> b = 10101010
   
 This operation can be seen as each displacement is divided by 2, so that in our example, we divide 3 times by 2, and in total we divide by 8.
     
-    <h3>right shift</h3>
-    It is an operator similar to the previous one, here at each shift, the most significant bit is lost and the least significant bit is filled with '0'.
+  <h3>right shift</h3>
+
+  It is an operator similar to the previous one, here at each shift, the most significant bit is lost and the least significant bit is filled with '0'.
 
 example:
 
@@ -111,5 +114,4 @@ a = b << 3 -> with the previous result.
 ```
   
 It can be understood as a multiplication by 2, for each displacement.
-  </summary>
   </details>
