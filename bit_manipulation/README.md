@@ -23,6 +23,8 @@
   * [ ^ - operator XOR ](#XOR)
   
   * [ ~ - operator NOT ](#NOT)
+  
+  ---
  
   <h3 name="AND">AND (&)</h3>
   This operator is a multiplication operator
@@ -37,6 +39,10 @@ a = b & c -> where in binary: b = 10101010
 --------
 10001000
 ```
+  
+  ---
+  
+  
   <h3 name="OR">OR (|)</h3>
   This operator is an addition operator, where any of the bits in the same position is '1', the result will be '1'.
 Example:
@@ -50,6 +56,8 @@ a = b | c -> b = 10101010
 11101110
 ```
   
+  ----
+  
   <h3 name="XOR">XOR (^)</h3>
   This operator is of an or-exclusivity, where the difference of states in bits of equal position will result in '1', and equality of state will result in '0', it can be understood as ( one or the other, but not both ).
 example:
@@ -62,6 +70,8 @@ a = b ^ c -> b = 10101010
 --------
 01100110
 ```
+  
+  ----
   
   <h3 name="NOT">NOT (~)</h3>
   This operation only applies to one element, but inverts the bit values of the element involved.
@@ -83,9 +93,11 @@ a = ~b -> b = 10101010
     <h2>shift operators</h2>
   </summary>
   
-    <h3>right shift (>>)</h3>
+  ----
   
-    It shifts the bits from left to right (from the most significant bit to the least significant bit), a defined number of times, the least significant bit is lost at each shift, while the most significant bit is filled with a '0'.
+  <h3>right shift (>>)</h3>
+  
+ It shifts the bits from left to right (from the most significant bit to the least significant bit), a defined number of times, the least significant bit is lost at each shift, while the most significant bit is filled with a '0'.
 
 Example:
 
@@ -98,7 +110,9 @@ a = b >> 3 -> b = 10101010
 ```
   
 This operation can be seen as each displacement is divided by 2, so that in our example, we divide 3 times by 2, and in total we divide by 8.
-    
+  
+  ---
+  
   <h3>right shift</h3>
 
   It is an operator similar to the previous one, here at each shift, the most significant bit is lost and the least significant bit is filled with '0'.
