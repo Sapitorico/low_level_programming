@@ -8,3 +8,34 @@
 
 <img width="500" src="https://cdn-media-1.freecodecamp.org/images/1*GtkdWOFKMEGrzvYzsK9pZg.gif">
 </div>
+
+---
+
+<details>
+  <summary>
+    <h2>bit-by-bit operators</h2>
+  </summary>
+  
+  * [ & - operator AND ](#AND)
+  
+  * [ | - operator OR ](#OR)
+  
+  * [ ~ - operator MOT ](#MOT)
+  
+  * [ ^ - operator XOR ](#xor)
+ 
+  <h3 name="AND">AND (&)</h3>
+  This operator is a multiplication operator
+example:
+
+```
+a = b & c -> where in binary: b = 10101010
+                              c = 11001100
+
+10101010 & -> if both bits, which are in the same position are '1' the result will also be '1'.
+11001100
+-----------
+10001000
+```
+  
+</details>
