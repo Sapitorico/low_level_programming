@@ -9,6 +9,18 @@
 <img width="500" src="https://cdn-media-1.freecodecamp.org/images/1*GtkdWOFKMEGrzvYzsK9pZg.gif">
 </div>
 
+Example:}
+
+```
+1) 14 = {1110 }2
+= 1 * 23 + 1 * 22 + 1 * 21 + 0 * 20
+= 14.
+
+2) 20 = {10100 }2
+= 1 * 24 + 0 * 23 + 1 * 22 + 0 * 21 + 0 * 20
+= 20.
+```
+
 ---
 
 <details>
