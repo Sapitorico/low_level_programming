@@ -25,7 +25,7 @@ Example:}
 
 <details>
   <summary>
-    <h2>bit-by-bit operators</h2>
+    <h2>Bitwise Operators</h2>
   </summary>
   
   * [ & - operator AND ](#AND)
