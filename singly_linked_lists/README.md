@@ -79,7 +79,11 @@ Based on this architecture we can create linked lists, queues or trees. Each typ
 
 <details>
 <summary><h2>Functioning</h2></summary>
+	
+Based on this architecture we can create linked lists, queues or trees. Each type of structure has different purposes and can be applied according to the problem to be solved.
 
+
+	
 <p>Normally lists have the common operations to work with their nodes, let's define methods for:</p>
 
 * Construct an empty list and give it a name.
@@ -97,7 +101,6 @@ Based on this architecture we can create linked lists, queues or trees. Each typ
 * Print the contents on the screen.
 
 * Get the number of elements or nodes in the list.
-
 
 <h3>Example</h3>
 
