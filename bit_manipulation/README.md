@@ -20,9 +20,9 @@
   
   * [ | - operator OR ](#OR)
   
-  * [ ~ - operator MOT ](#MOT)
+  * [ ^ - operator XOR ](#XOR)
   
-  * [ ^ - operator XOR ](#xor)
+  * [ ~ - operator NOT ](#NOT)
  
   <h3 name="AND">AND (&)</h3>
   This operator is a multiplication operator
@@ -34,8 +34,42 @@ a = b & c -> where in binary: b = 10101010
 
 10101010 & -> if both bits, which are in the same position are '1' the result will also be '1'.
 11001100
------------
+--------
 10001000
 ```
-  
+  <h3 name="OR">OR (|)</h3>
+  This operator is an addition operator, where any of the bits in the same position is '1', the result will be '1'.
+Example:
+
+```
+a = b | c -> b = 10101010
+             c = 11001100
+10101010 |
+11001100
+--------
+11101110
+```
+  <h3 name="XOR">XOR (^)</h3>
+  This operator is of an or-exclusivity, where the difference of states in bits of equal position will result in '1', and equality of state will result in '0', it can be understood as ( one or the other, but not both ).
+example:
+
+```
+a = b ^ c -> b = 10101010
+             c = 11001100
+10101010 ^
+11001100
+--------
+01100110
+```
+  <h3 name="NOT">NOT (~)</h3>
+  This operation only applies to one element, but inverts the bit values of the element involved.
+example:
+
+```
+a = ~b -> b = 10101010
+
+~10101010
+ --------
+ 01010101
+```
 </details>
