@@ -80,10 +80,6 @@ Based on this architecture we can create linked lists, queues or trees. Each typ
 <details>
 <summary><h2>Functioning</h2></summary>
 	
-Based on this architecture we can create linked lists, queues or trees. Each type of structure has different purposes and can be applied according to the problem to be solved.
-
-
-	
 <p>Normally lists have the common operations to work with their nodes, let's define methods for:</p>
 
 * Construct an empty list and give it a name.
@@ -192,44 +188,16 @@ PROC insert_node(l: list, b: book)
 	new_node.element = b
 	new_next_node.next = l.first
 	l.first = new_node
- ---     ---     ---     ---
-|   |---|   |---|   |---|   |
- ---     ---     ---     ---
-  |
-  v
-head pointer
-
-
-new node
-  ^
-  |
- ---     ---     ---     ---     ---
-|   |   |   |---|   |---|   |---|   |
- ---     ---     ---     ---     ---
-          |
-	  v
-	head pointer
-
-new node
-  ^
-  |
- ---     ---     ---     ---     ---
-|   |---|   |---|   |---|   |---|   |
- ---     ---     ---     ---     ---
-          |
-          v
-       head pointer
-
-new node
-  ^
-  |        
- ---     ---     ---     ---     ---
-|   |---|   |---|   |---|   |---|   |
- ---     ---     ---     ---     ---
-  |
-  v
-head pointer
 ```
+	
+<img width="3952" alt="linked list" src="https://user-images.githubusercontent.com/105575956/202876569-de26ced3-6f3e-4355-90b4-c6a7ba9c542f.png">
+
+<img width="4144" alt="linked list" src="https://user-images.githubusercontent.com/105575956/202876658-21ccec0c-5486-42b5-9c8d-53dbc0401ec3.png">
+
+	
+<img width="4144" alt="linked list" src="https://user-images.githubusercontent.com/105575956/202876712-0a3fcf2a-8fc3-436c-9fb3-55c16d0607de.png">
+
+<img width="4768" alt="linked list" src="https://user-images.githubusercontent.com/105575956/202876795-e7956b8b-ec4e-4c32-b70d-89424fd56a4a.png">
 
 <a name="e"></a>
 <h3 name="insert elements at the end">insert elements at the end</h3>
