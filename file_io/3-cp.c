@@ -1,5 +1,10 @@
 #include "main.h"
 /**
+ * main - copies the content of a file to another file.
+ * @argc: argument counter
+ * @argv: arguments:
+ *
+ * Return: 0
  */
 int main(int argc, char **argv)
 {
