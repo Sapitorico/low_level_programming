@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 	}
 	while ((rd = read(fd, buff, BUFF_SIZE)))
 	{
-		if (wr = write(ft, buff, rd) == -1)
+		if ((wr = write(ft, buff, rd)) == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
