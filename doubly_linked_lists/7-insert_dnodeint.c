@@ -9,18 +9,13 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (!h)
 		return (NULL);
 	if (!idx)
-	{
-		*h = add_dnodeint(h, n);
-		if (!*h)
-		{
-			free_dlistint(*h);
-			return (NULL);
-		}
-		return (*h);
-	}
+		return (add_dnodeint(h, n));
 	node = get_dnodeint_at_index(*h, idx - 1);
 	if (!node)
 		return (NULL);
 	nth = add_dnodeint(&(node->next), n);
+	nth->prev = node;
+	node->next = nth;
+	nth->next->prev = nth;
 	return (nth);
 }
