@@ -18,6 +18,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 	while (node->next)
 		node = node->next;
-	end = add_dnodeint_end(&(node->next), n);
+	end = add_dnodeint(&node, n);
 	return (end);
 }
