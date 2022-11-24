@@ -9,15 +9,13 @@
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *end = NULL, *node = *head;
+	dlistint_t *node = *head;
 
 	if (!node)
-	{
-		*head = add_dnodeint(head, n);
-		return (*head);
-	}
+		return (add_dnodeint(head, n));
 	while (node->next)
 		node = node->next;
-	end = add_dnodeint(&(node->next), n);
-	return (end);
+	node->next = add_dnodeint(head, n);
+	node->next->prev = node;
+	return (node->next);
 }
