@@ -1,6 +1,4 @@
 #include "lists.h"
-#include "2-add_dnodeint.c"
-#include "4-free_dlistint.c"
 /**
  * add_dnodeint_end - add a node at the end
  * @head: head of the list
