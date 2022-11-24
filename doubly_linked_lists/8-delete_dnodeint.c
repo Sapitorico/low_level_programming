@@ -2,6 +2,11 @@
 #include "5-get_dnodeint.c"
 int pop_dlistint(dlistint_t **head);
 /**
+ * delete_dnodeint_at_index - delete a node at specific index
+ * @head: Pointer to the first node of the list
+ * @index: index of the node that should be deleted
+ *
+ * Return: 1 if it succeeded, -1 if it failed
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
@@ -23,6 +28,12 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	free(node);
 	return (1);
 }
+/**
+ * pop_dlistint - deletes the head node
+ * @head: pointer to the first node
+ *
+ * Return: 1 if it succeeded, -1 if it failed
+ */
 int pop_dlistint(dlistint_t **head)
 {
 	dlistint_t *node = 0;
