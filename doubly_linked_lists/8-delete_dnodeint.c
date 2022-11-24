@@ -28,7 +28,7 @@ int pop_dlistint(dlistint_t **head)
 	dlistint_t *node = 0;
 
 	if (!head || !(*head))
-		return (0);
+		return (-1);
 	node = *head;
 	*head = (*head)->next;
 	if (*head)
